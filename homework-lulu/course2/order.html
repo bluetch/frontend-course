@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homewoek2</title>
+  </head>
+  <body>
+    <image src="images/menu.jpg"></image>
+    <h1>宅配/自取預約表單</h1>
+    <p>
+      為了於疫情期間，繼續提供服務，我們開放雙北外送以及到店取貨取貨服務，<br />
+      讓你享受美食的同時也能專心防疫!若有外送與宅配需求，請配合填寫表單，<br />
+      收到回覆後我們再以信件方式聯絡您。
+    </p>
+    <!-- order.html的用意 -->
+    <form action="result.html" method="post">
+      <!--label 如何定義 -->
+      <ol>
+          <li>
+						<label for="seat-name">姓名:</label>
+          <input type="text" name="seat-name" id="seat-name" placeholder="姓名" /><br />
+				</li>
+        </label>
+          <li>
+						<label for="seat-email">
+							E-MAIL:
+						</label>
+						<input
+            type="email"
+            name="email"
+            id="seat-email"
+            placeholder="e.g customer@gmail.com"
+          />
+					</li>
+          <br />
+        </label>
+          <li>
+						<label for="seat-phone">電話:</label>
+						<input
+            type="text"
+            name="number"
+            id="seat-phone"
+            placeholder="09XXXXXXXXX"
+          /><br />
+					</li>
+        </label>
+        <label for="seat-deliery">
+          <li>宅配/自取</li>
+          <input type="radio" name="delivery" id="shipping" />宅配<br />
+          <input type="radio" name="delivery" id="pickup" />自取<br />
+        </label>
+        <label for="seat-city">
+          <li>宅配城市</li>
+          <input type="radio" name="city" id="Taipei" />台北<br />
+          <input type="radio" name="city" id="New Taipei" />新北<br />
+        </label>
+        <label for="seat-area">
+          <li>宅配區域-台北市</li>
+          <select name="area" id="area">
+            <!-- 如何預設請選擇 -->
+						<option value="">請選擇</option>
+            <option value="">松山</option>
+            <option value="">內湖</option>
+            <option value="">中山</option>
+            <option value="">信義</option>
+          </select>
+        </label>
+        <label for="seat-address">
+          <li>詳細地址</li>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="地址"
+          /><br />
+        </label>
+        <label for="seat-date">
+          <li>預計外送日期</li>
+          <input type="date" name="date" id="date" />
+        </label>
+        <label for="seat-meals">
+          <li>訂購餐點</li>
+          <input type="checkbox" name="meals" id="cake1" />草莓蛋糕
+          <input type="checkbox" name="meals" id="cake2" />起司蛋糕
+          <input type="checkbox" name="meals" id="cake3" />提拉米蘇
+          <input type="checkbox" name="meals" id="cake4" />蔬菜鹹派
+          <input type="checkbox" name="meals" id="cake5" />松露奶油鹹派
+          <input type="checkbox" name="meals" id="cake6" />青醬義大利麵
+        </label>
+        <li>備註</li>
+        <textarea name="message" id="message" rows="5" cols="55"></textarea>
+      </ol>
+      <a href="homework1.html" target="_blank">菜單</a>
+      <input type="submit" />
+    </form>
+		<div style="border: 1px solid black">test
+			<img src="images/menu.jpg" alt="">
+		</div>
+  </body>
+</html>

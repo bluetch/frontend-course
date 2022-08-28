@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+    <link rel="stylesheet" href="styles/all.css"/>
+    <link rel="stylesheet" href="styles/header.css"/>
+    <style>
+      ul.alcohol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      ul.alcohol li {
+        display: block;
+        padding: 30px 60px;
+      }
+      ul.alcohol li:hover {
+        background-color: #000000;
+        color: #ffffff;
+        cursor: pointer;
+        border-radius: 1px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr 2fr 2fr);
+        grid-gap: 5%;
+      }
+      .container{
+        margin-top: 60px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">LULU</div>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="">作品集</a></li>
+        <li><a href="">履歷</a></li>
+        <li><a href="">與我聯絡</a></li>
+      </ul>
+    </header>
+  </body>
+</html></head><body>
+<main class="container grid">
+  <aside>
+    <ul class="alcohol">
+      <li onclick="alcohol('Vodka')">伏特加</li>
+      <li onclick="alcohol('Tequila')">龍舌蘭</li>
+      <li onclick="alcohol('Gin')">琴酒</li>
+      <li onclick="alcohol('Rum')">蘭姆酒</li>
+      <li onclick="alcohol('Whisky')">威士忌</li>
+      <li onclick="alcohol('Brandy')">白蘭地</li>
+    </ul>
+  </aside>
+  <div class="container">
+    <img id="alcoholImg" src="" alt="">
+    <article>
+      <h1 id="alcoholName"></h1>
+      <p id="alcoholDesc"></p>
+    </article>
+  </div>
+</main>
+<script>
+  let alcoholName = document.getElementById("alcoholName");
+  let alcoholImg = document.getElementById("alcoholImg");
+  let alcoholDesc = document.getElementById("alcoholDesc");
+
+  function alcohol(number) {
+    number = number.toString();
+    console.log(number)
+    switch (number) {
+      case "Vodka": alcoholName.innerHTML = "伏特加 Vodka";
+        alcoholImg.src = "images/Vodka.jpg";
+        alcoholDesc.innerHTML = '伏特加是最無味無色無香氣的基酒，可以說是最沒有特色的純酒精。Vodka其實是源自於俄語的「Voda」也就是水的意思。原料主要為馬鈴薯、玉米等穀物，經過發酵、蒸餾後再利用活性碳過濾，就會得到如水般只有酒精味道的伏特加。伏特加也可說是最早出現的蒸餾酒之一，在俄羅斯等緯度較高的國家，因為能夠有效禦寒取暖而廣為盛行。';
+        break;
+      case "Tequila": alcoholName.innerHTML = "龍舌蘭 Tequila";
+        alcoholImg.src = "images/Tequila.jpg";
+        alcoholDesc.innerHTML = "龍舌蘭其實也有分種類的，依據陳年的年份來分共有5個種類，大家最常看見的是琥珀色龍舌蘭為第三種。全球的龍舌蘭酒大多來自墨西哥，墨西哥的地理氣候與環境適合種植龍舌蘭植物。而龍舌蘭酒是利用龍舌蘭植物的鱗菁部分來釀造，龍舌蘭的菁多汁且甜。經釀造後的加工方法不同又分為未蒸餾的「普逵酒」（Pulque）與受蒸餾的「梅斯卡爾酒」（Mezcal）兩種，我們常聽到的龍舌蘭酒則是屬於後者的一類。";
+        break;
+      case "Gin": alcoholName.innerHTML = "琴酒 Gin";
+        alcoholImg.src = "images/Gin.jpg";
+        alcoholDese.innerHTML = "琴酒，是否光聽名字就覺得有些詩意？豐富的杜松子與藥草香氣，讓他成為基酒中脫穎而出最富有獨特氣質的酒。琴酒是最晚被發明的基酒，於16世紀大航海時代誕生於荷蘭，當時因為主原料「杜松子」是盛行的解熱治療草藥，一位醫學系教授將杜松子放進酒精浸泡後蒸餾，打算精煉杜松子，結果誤打誤撞製造出了「杜松子藥酒」(Genièvre)。如今的琴酒大多為「乾琴酒」(Dry Gin)，是在19世紀工業革命時，添加了杜松子、芫荽(香菜)、肉桂、茴香等等香草和藥草，並使用當時發明出的連續式蒸餾器所蒸餾的純淨琴酒。";
+        break;
+      case "Rum": alcoholName.innerHTML = "蘭姆酒 Rum";
+        alcoholImg.src = "images/Rum.jpg";
+        alcoholDesc.innerHTML = "蘭姆酒可以從顏色與風味來區分，最常見由顏色分為白蘭姆、黑蘭姆與黃金蘭姆三種。白蘭姆為高純度原酒，口感最為刺激。黑蘭姆則是會加入甘蔗渣一起發酵，並放進內側燒烤過的橡木桶內陳年，所以味道香醇馥郁。而黃金蘭姆酒的生產方式有許多，例如將白蘭姆酒從金屬儲酒槽換進橡木桶，則酒體便會有木桶的香味及顏色。蘭姆酒發源於加勒比海，傳說在16世紀時是海盜們最愛的飲料，並在18世紀時因為列強殖民的關係，在全球大盛行。到了19世紀末，中美洲引進連續式蒸餾機後大量生產，成為現在蘭姆酒的主要生產地。";
+        break;
+      case "Whisky": alcoholName.innerHTML = "威士忌 Whisky";
+        alcoholImg.src = "images/Whisky.jpg";
+        alcoholDesc.innerHTML = "威士忌可以說是最知名的酒之一，種類非常多樣世界各地都有不同的威士忌。威士忌是由穀類為原料蒸餾出的酒，與其他蒸餾酒類的差異是必須經過「桶熟成」。威士忌的發源時間及起源有些模糊，並無一個準確的資料，但當製酒方法遠傳到愛爾蘭，當地人稱作制出的酒類為生命之水，以母語蓋爾語直譯為Uisge-beatha，這就是威士忌名稱的起源。威士忌的主原料為大麥、小麥、玉米等穀物，將原料去掉雜質浸於熱水，大麥會發芽成為麥芽，經過研磨、糖化、發酵、蒸餾、裝桶熟成，最後由酒廠調酒師調配就完成了。各地的威士忌風味都有所不同，愛爾蘭地區多使用了燕麥為原料，而蘇格蘭則會在烘乾原料時使用泥煤，這讓威士忌多了煙燻的獨特味道。";
+        break;
+      case "Brandy": alcoholName.innerHTML = "白蘭地 Brandy";
+        alcoholImg.src = "images/Brandy.jpg";
+        alcoholDesc.innerHTML = "白蘭地一字是由荷蘭文的「燒酒」而來，而目前Brandy一詞被當作統稱以葡萄為原料釀造、蒸餾的酒類，而我們平常喝的白蘭地酒，就是以水果作為原料製作的蒸餾酒。白蘭地在蒸餾後的原酒是透明的，放入木桶中才會慢慢有色澤，與威士忌是相同的。在命名上，以葡萄以外的水果當原料的，可以在名稱前加上水果名稱，像是櫻桃白蘭地、草莓白蘭地。在台灣白蘭地多被用來純飲，拿來當基酒作調酒的價位通常會偏高。";
+        break;
+    }
+  }
+  // 執行這個程式
+  alcohol("voda");
+</script>
+</body>
+</html>

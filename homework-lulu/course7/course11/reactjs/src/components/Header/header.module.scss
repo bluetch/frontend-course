@@ -1,0 +1,16 @@
+.header{
+    background-color: black;
+    display: flex;
+    justify-content:space-between ;
+    .brand{
+        padding: 0 20px
+    }
+    nav{
+        ul{
+            margin: 0;
+        }
+        li{
+            display: inline-block;
+        }
+    }
+}

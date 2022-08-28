@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <p>
+        3+5=
+        <span id="demo_01">?</span>
+    </p>
+    <button onclick={add()}>看答案</button>
+    
+    <p>3-5=<span id="demo_02"></span></p>
+    <button onclick={sub()}>看答案</button>
+    
+    <p id="demo_03">3*5=</p>
+    <button onclick={mul()}>看答案</button>
+    
+    <p>
+        3/5=
+        <span id="demo_04"></span>
+    </p>
+    <button onclick="div()">看答案</button>
+    
+<script>
+    function add() {
+        var x=3;
+        var y=5;
+        var a=x+y;     
+    document.getElementById("demo_01").innerHTML = a;
+
+    }   
+    function sub() {
+        var x=3;
+        var y=5;
+        var b=x-y; 
+        document.getElementById("demo_02").innerHTML = b;
+    }
+    function mul() {
+        var x=3;
+        var y=5;
+        var c=x*y; 
+        document.getElementById("demo_03").innerHTML = c;
+    }
+    function div() {
+        var x=3;
+        var y=5;
+        var d=x/y; 
+        document.getElementById("demo_04").innerHTML = d;
+    }
+  </script>
+  
+
+</body>
+</html>

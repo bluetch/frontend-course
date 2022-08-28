@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <title>portfolio</title>
+    <style>
+      section {
+        margin: 10px, 0;
+      }
+      *.foucs {
+        outline: 2px solid gray;
+      }
+      .card-float {
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .card {
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        text-decoration: none;
+      }
+      .card:hover img {
+        opacity: 0.8;
+        filter: grayscale(0%);
+      }
+      .card img {
+        width: 100%;
+        filter: grayscale(100%);
+      }
+      .card .name {
+        color: black;
+      }
+      .card .desc {
+        color: gray;
+        max-height: 18px;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      img {
+        width: 80%
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">LULU</div>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="portfolio.html">作品集</a></li>
+        <li><a href="">履歷</a></li>
+        <li><a href="">與我聯絡</a></li>
+      </ul>
+    </header>
+    <main class="container">
+      <section class="clearfix">
+        <a href="#" class="card card-float">
+          <figure>
+            <img src="images/pl-01.jpg">
+
+            <figcaption>
+              <h3 class="name">作品01</h3>
+              <p class="desc">紅酒宣傳</p>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="#" class="card card-float">
+          <figure>
+            <img src="images/pl-02.jpg">
+
+            <figcaption>
+              <h3 class="name">作品02</h3>
+              <p class="desc">紅酒宣傳</p>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="#" class="card card-float">
+          <figure>
+            <img src="images/pl-03.jpg">
+
+            <figcaption>
+              <h3 class="name">作品03</h3>
+              <p class="desc">紅酒宣傳</p>
+            </figcaption>
+          </figure>
+        </a>
+
+      </section>
+      <section class="grid">
+        <a href="#" class="card">
+          <figure>
+            <img src="images/pl-04.jpg">
+
+            <figcaption>
+              <h3 class="name">作品04</h3>
+              <p class="desc">紅酒宣傳</p>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="#" class="card">
+          <figure>
+            <img src="images/pl-05.jpg">
+
+            <figcaption>
+              <h3 class="name">作品05</h3>
+              <p class="desc">紅酒宣傳</p>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="#" class="card">
+          <figure>
+            <img src="images/pl-06.jpg">
+
+            <figcaption>
+              <h3 class="name">作品06</h3>
+              <p class="desc">紅酒宣傳</p>
+            </figcaption>
+          </figure>
+        </a>
+      </section>
+    </main>
+
+  </body>
+</html>

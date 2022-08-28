@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+    <style>
+        .car{
+            border: 3px;
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+            width: 33%;
+        }
+        .car img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="test">喜歡哪一台車</h2>
+    <P>請選擇一台喜歡的車款</P>
+    <figure class="car">
+        <img id="image" src="images/car1.jfif" alt="">
+        <figcaption>
+            <p>名字:<span id="name">COLT PLUS</span></p>
+            <p>型號:<span id="model">享樂型</span></p>
+            <p>重量:<span id="weight">1000</span>kg</p>
+            <p>顏色:<span id="color">晶曜藍</span></p>
+            <button onclick="handleCar(1)">上一台車</button>
+            <button onclick="handleCar(2)">下一台車</button>
+            <button onclick="handleCar(3)">某台車</button>
+        </figcaption>
+    </figure>
+    <script>
+        
+        function handleCar(x){
+            if(x==1){
+                let car={
+                    image:"images/car2.jfif",
+                    name:"CR_V",
+                    model:"1.5VTi",
+                    weight:"1500",
+                    color:"深鈦灰"
+                }
+                document.getElementById("image").src=car.image;
+                document.getElementById("name").innerText=car.name;
+                document.getElementById("model").innerHTML=car.model;
+                document.getElementById("weight").innerHTML=car.weight;
+                document.getElementById("color").innerHTML=car.color;
+            }else if(x==2){
+            let car={
+                    image:"images/car3.png",
+                    name:"TOYOTA ALTIS",
+                    model:"Comfortable Sedan",
+                    weight:"1800",
+                    color:"白色"
+                }
+                document.getElementById("image").src=car.image;
+                document.getElementById("name").innerText="<p>345</p>";
+                document.getElementById("model").innerHTML="<p style='color: red'>123</p>";
+                document.getElementById("weight").innerHTML=car.weight;
+                document.getElementById("color").innerHTML=car.color;
+            }else{
+                alert("error");
+            }
+        }
+    </script>
+</body>
+</html>

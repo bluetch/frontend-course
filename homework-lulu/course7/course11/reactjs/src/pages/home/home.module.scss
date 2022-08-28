@@ -1,0 +1,26 @@
+.message{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid gold;
+    display: flex;
+    img{
+        width: 30%;
+    }
+    .content{
+        width: 70%;
+        padding: 0 20px;
+        &:hover{
+            cursor: pointer;
+            h3{
+                color: gray;
+            }
+        }
+        h3{
+            margin:0 0 16px;
+        }
+        .date{
+            color:rgb(30, 0, 255);
+            margin: 0 0 4px;
+        }
+    }
+}

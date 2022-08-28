@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/all.css"/>
+    <link rel="stylesheet" href="styles/header.css"/>
+    <title>multiplication table</title>
+    <style>
+      h3 {
+        text-align: center;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        position: relative;
+        max-width: 560px;
+        margin: 10px auto;
+        padding: 5px;
+        color: #ccc;
+        background-color: #fff;
+        box-shadow: 1px 2px 3px 0 #ddd;
+        z-index: 1;
+
+      }
+      .grid .item {
+        position: relative;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">LULU</div>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="">作品集</a></li>
+        <li><a href="">履歷</a></li>
+        <li><a href="">與我聯絡</a></li>
+      </ul>
+    </header>
+
+    <div class="container">
+      <h3>九九乘法表</h3>
+      <div id="result"></div>
+
+    </div>
+
+    <script>
+      let bg_color;
+      let table = "";
+      table += '<div class="grid">';
+
+      for (i = 1; i < 10; i ++) {
+        for (j = 1; j < 10; j ++) {
+          if (i == j) {
+            bg_color = '#716746';
+          } else if (i == 1) {
+            bg_color = 'rgba(187,212,61,0.2)';
+          } else if (j == 1) {
+            bg_color = "rgba(244,240,165,0.5)";
+          } else {
+            bg_color = '#fff';
+          } table += '<div class="item" style="background:' + bg_color + '">' + i * j + '</div>';
+        }
+      }
+      table += ('</div>');
+      document.getElementById('result').innerHTML = table;
+    </script>
+  </body>
+</html>

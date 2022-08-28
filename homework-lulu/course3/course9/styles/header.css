@@ -1,0 +1,4 @@
+header ul li {display: inline-block;
+}   
+header ul li a {color:yellow; display:block;padding: 8px;}
+header .logo{color:#FFF; padding: 8px;}
