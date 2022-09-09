@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Page</title>
+    <style>
+      /* textarea{
+        resize: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <img
+    src="images/korean reservation.png"
+    alt="請在此點餐"
+    title="請在此點選您想要的韓式豆腐煲餐點"
+    />
+    <form action="result page.html">
+      <h2>預定餐點表單</h2>
+      <!-- TODO: ISP-113 -->
+      <hr>
+      <a href="menu.html" target="_blank">瀏覽菜單</a>
+      <div>
+        <label for="name">預約大名</label>
+        <input type="text" id="name"/>
+      </div>
+      <div>
+        <label for="">性別</label>
+        <label for="man">
+          <input type="radio" name="gender" id="man"> 男
+        </label>
+        <label for="woman">
+          <input type="radio" name="gender" id="woman"> 女
+        </label>
+      </div>
+      <div>
+        <label for="">豆腐煲系列</label>
+        <label for="bulgogi-01">
+          <input type="checkbox" name="bulgogi" id="bulgogi-01"> 牛肉豆腐煲
+        </label>
+        <label for="bulgogi-02">
+          <input type="checkbox" name="bulgogi" id="bulgogi-02"> 泡菜鮮菇嫩豆腐煲
+        </label>
+        <label for="bulgogi-03">
+          <input type="checkbox" name="bulgogi" id="bulgogi-03"> 咖哩嫩豆腐煲
+        </label>
+      </div>
+      <div>
+        <label for="date">預約用餐時間</label>
+        <input type="date" id="date" />
+      </div>
+      <div>
+        <label for="mobile">手機號碼</label>
+        <input type="tel" id="mobile" />
+      </div>
+      <div>
+        <label for="seat">座位</label>
+        <select name="seat" id="seat">
+          <option value="s1">靠窗</option>
+          <option value="s2">走道</option>
+        </select>
+      </div>
+      <div>
+        <label for="mark">備註</label>
+        <textarea name="mark" id="mark" cols="20" rows="3"></textarea>
+      </div>
+      <button type="reset">重設</button>
+      <button type="button">取消訂單</button>
+      <button type="submit">送出預約</button>
+    </form>
+    <!-- <script>
+      var x = "test";
+      alert(x);
+    </script> -->
+  </body>
+</html>
