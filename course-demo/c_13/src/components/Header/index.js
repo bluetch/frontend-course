@@ -14,7 +14,10 @@ export const Header = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/todo">Todo</Link>
+            <Link to="/example">Example</Link>
+          </li>
+          <li>
+            <Link to="/homework">Homework</Link>
           </li>
           <li>
             <a href="https://github.com/bluetch/frontend-course" target="_blank" rel="noreferrer">GitHub</a>

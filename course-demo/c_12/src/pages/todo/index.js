@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Button, Layout } from "../../components";
-import styles from "./about.module.scss";
+import styles from "./todo.module.scss";
 
 const data = [
   {
@@ -23,7 +23,7 @@ const data = [
   },
 ];
 
-export const About = () => {
+export const Todo = () => {
   const [todos, setTodos] = useState(data);
   const inputNameRef = useRef();
   const inputDateRef = useRef();
@@ -51,15 +51,12 @@ export const About = () => {
   }
 
   useEffect(() => {
-    document.title = "About";
+    document.title = "Todo list";
   }, [])
 
   return (
     <Layout>
-      <h1>About</h1>
-      <p>My name is Ken.</p>
-      <hr />
-      <h2>Todo List in 2022</h2>
+      <h1>Todo List in 2022</h1>
       <div className={styles.grid}>
         <div className={styles.actions}>
           <label htmlFor="name">

@@ -22,10 +22,6 @@ export const Home = () => {
   const renderCount = useRef(0);  // { current: 0 }
 
   useEffect(() => {
-    console.log(renderCount.current += 1);
-  });
-
-  useEffect(() => {
     document.title = "首頁";
   }, []);
 

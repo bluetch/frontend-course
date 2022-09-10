@@ -1,0 +1,25 @@
+.example {
+  .form {
+    margin: auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .label {
+    margin-right: 20px;
+    span {
+      margin-right: 4px;
+      color: gray;
+    }
+    input {
+      padding: 6px 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  }
+
+  .error {
+    color: red;
+  }
+}
