@@ -223,8 +223,17 @@ homework: Todo list
 
 ### 6-3. React.js
 
+- (JS) Spread operator, querySelector, map
+- Regular Expressions
+- useState with verify
+
+```
+homework: Register page
+```
+
+### 6-4. React.js
+
 - useContext
-- (JS) Regular Expressions
 - useReducer
 - useCallback
 
@@ -232,7 +241,7 @@ homework: Todo list
 homework:
 ```
 
-### 6-4. React.js
+### 6-5. React.js
 
 - useMemo
 - Custom Hooks

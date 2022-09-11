@@ -1,22 +1,17 @@
 import { useState, useEffect } from 'react';
 import { Button, Layout } from '../../components';
-import { useToastContext } from '../../hooks/useToast';
 import styles from './example.module.scss';
 
-const jobs = ["1", "3", "5"];
-console.log(jobs);
-console.log(...jobs);
+const array1 = [1, 2, 3, 4];
+const array2 = [5, 6, 7, 8];
+const array3 = array1.concat(array2);
+// const array3 = [...array1, ...array2];
+
+console.log(array3);
 
 export const Example = () => {
 
   const [mobileError, setMobileError] = useState(false);
-  const { errorToast } = useToastContext();
-
-  const handleToast = () => {
-    errorToast(
-      `無法讀取，請確認網路狀態或稍後再試。`
-    );
-  }
 
   const handleVerify = () => {
     let number = document.querySelector("#mobile").value;
@@ -49,6 +44,13 @@ export const Example = () => {
         <h1>Example</h1>
         <section>
           <h3>Spread syntax</h3>
+          <code>
+            const array1 = [1, 2, 3, 4]; <br />
+            const array2 = [5, 6, 7, 8]; <br />
+            const array3 = [...array1, ...array2];<br />
+            console.log(array3) // [1,2,3,4,5,6,7,8];
+          </code>
+          <hr />
         </section>
         <section>
           <h3>Mobile verify</h3>
@@ -87,10 +89,6 @@ export const Example = () => {
           <Button onClick={handleReplace}>Replace</Button>
           <hr />
         </article>
-        <section>
-          <h3>useToast / useContext</h3>
-          <Button onClick={handleToast}>UseContext</Button>
-        </section>
       </div>
     </Layout>
   )
