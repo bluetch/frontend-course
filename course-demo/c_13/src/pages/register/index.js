@@ -12,11 +12,22 @@ export const Register = () => {
   const handleRegister = (e) => {
     e.preventDefault();
     let name = document.querySelector("#name").value;
+    let mobile = document.querySelector("#mobile").value;
     const nameRegex = /\w/g;
+    const mobileRegex = /\d{10}/g;
+
+    // 判斷 full name是否符合格式
     if (nameRegex.test(name)) {
       setNameError(false);
     } else {
       setNameError(true);
+    }
+
+    // 判斷手機號碼是否符合格式
+    if (mobileRegex.test(mobile)) {
+      setMobileError(false);
+    } else {
+      setMobileError(true);
     }
   }
 
@@ -44,7 +55,7 @@ export const Register = () => {
           <label htmlFor="mobile">
             <span>Mobile Number</span>
             <input type="text" id="mobile" />
-            {mobileError && <div className={styles.error}>錯誤</div>}
+            {mobileError && <div className={styles.error}>手機號碼格式錯誤</div>}
           </label>
 
           <label htmlFor="password">

@@ -221,14 +221,14 @@ homework: components, pages, and news
 homework: Todo list
 ```
 
-### 6-3. React.js
+### [6-3. React.js](https://docs.google.com/presentation/d/1cflki8Sq8OrRH611V_8MbLnWhvRdc9YnLiREu3a5AE4/edit#slide=id.p)
 
-- (JS) Spread operator, querySelector, map
-- Regular Expressions
-- useState with verify
+- (JS) Spread operator, Rest operator
+- (JS) querySelector
+- (JS) map()
 
 ```
-homework: Register page
+homework: Todo list
 ```
 
 ### 6-4. React.js
