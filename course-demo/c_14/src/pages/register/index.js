@@ -18,7 +18,7 @@ export const Register = () => {
   const handleRegister = (e) => {
     e.preventDefault();
     const nameRegex = /\w/g;
-    const emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/g;
+    const emailRegex = /[a-z0-9]@[a-z]+\.[a-z]{2,3}/g;
     const mobileRegex = /\d{10}/g;
     const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/g;
 
@@ -51,7 +51,7 @@ export const Register = () => {
     }
 
     // 判斷密碼內容是否一樣
-    if (passwordRef.current.value == passwordAgainRef.current.value) {
+    if (passwordRef.current.value === passwordAgainRef.current.value) {
       setpasswordAgainError(false);
     } else {
       setpasswordAgainError(true);
@@ -69,7 +69,7 @@ export const Register = () => {
           <h1>Create Account</h1>
           <label htmlFor="name">
             <span>Full Name</span>
-            <input type="text" id="name" ref={nameRef}/>
+            <input type="text" id="name" ref={nameRef} onBlur={() => console.log('blur')}/>
             {nameError && <div className={styles.error}>格式錯誤，請使用英數字</div>}
           </label>
 
