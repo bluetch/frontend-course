@@ -54,7 +54,7 @@ homework: To build a reservation page for restaurant by HTML
 
 ## 3. CSS
 
-### [3. CSS_01](https://docs.google.com/presentation/d/1zb_wziZ2ZXC-q9s3v7kgqondwDCTugp4DO6cWqnPwT4/)
+### [CSS_01](https://docs.google.com/presentation/d/1zb_wziZ2ZXC-q9s3v7kgqondwDCTugp4DO6cWqnPwT4/)
 
 - CSS 基本語法認識與程式碼放置位置
 - Selector: element, ID, classs, attribute
@@ -69,7 +69,7 @@ homework: To build a reservation page for restaurant by HTML
 homework: Base on 2-1 homework, to use CSS style your page
 ```
 
-### [4. CSS_02](https://docs.google.com/presentation/d/10HbYd1trhdtSu6KBP7NBPxB81-2mK6qGluNoAk-e_p4/)
+### [CSS_02](https://docs.google.com/presentation/d/10HbYd1trhdtSu6KBP7NBPxB81-2mK6qGluNoAk-e_p4/)
 
 - text-align, letter spacing, line height
 - font-family, font-weight, text-indent
@@ -85,7 +85,7 @@ homework: Base on 2-1 homework, to use CSS style your page
 homework: To build a calendar page with HTML & CSS
 ```
 
-### [5. CSS_03](https://docs.google.com/presentation/d/1mbwgCORR19x3PaZXDu7bJqbTeAXshIYtbY5xiMhhYX4/)
+### [CSS_03](https://docs.google.com/presentation/d/1mbwgCORR19x3PaZXDu7bJqbTeAXshIYtbY5xiMhhYX4/)
 
 - position: static, relative, absolute, fixed, sticky
 - flex layout
@@ -99,7 +99,7 @@ homework: To build a calendar page with HTML & CSS
 homework: To create a simple animation and header in pages
 ```
 
-### [6. CSS-4](https://docs.google.com/presentation/d/1fw2JPKNHeg45vUPy0zTbH60L4HxrjXpeJSlKMD6LE_k/)
+### [CSS-4](https://docs.google.com/presentation/d/1fw2JPKNHeg45vUPy0zTbH60L4HxrjXpeJSlKMD6LE_k/)
 
 - opacity and display:none, visibility:hidden
 - float, clear
@@ -241,7 +241,7 @@ homework: register page
 homework: toast
 ```
 
-### [17. React.js - 06]()
+### [React_06]()
 
 - useReducer
 - useCallback
@@ -250,7 +250,7 @@ homework: toast
 homework:
 ```
 
-### [18. React.js -07]()
+### [React.js_07_]()
 
 - useMemo
 - TypeScript
@@ -259,7 +259,7 @@ homework:
 homework:
 ```
 
-## 7. Next.js
+## 7. [Next.js]()
 
 - Getting Started
 - Pages
@@ -273,7 +273,7 @@ homework:
 homework:
 ```
 
-## 8. TailwindCSS
+## 8. [TailwindCSS]()
 
 - Get started
 - Core concept
@@ -290,7 +290,7 @@ homework:
 homework:
 ```
 
-## 9. RESTfulAPI
+## 9. [RESTfulAPI]()
 
 - Intro RESTful API
 - Chrome Inspect: Network
@@ -304,14 +304,28 @@ homework:
 homework:
 ```
 
-## 10. Interview Prepare
+## 10. Interview
 
-- [LeetCode](https://leetcode.com/)
-- common questions
-- personal website / github
+### [Interview_01]()
+
+LeetCode
+1. Two Sum (Easy)
+2. Add Two Numbers (Medium)
+3. Longest Substring Without Repeating Characters
 
 ```
 homework:
+```
+
+### [Interview_02]()
+
+LeetCode
+5. Longest Palindromic Substring
+7. Reverse Interger
+9. Palindrome Number
+
+```
+homework: Palindrome Number
 ```
 
 
