@@ -21,7 +21,7 @@ homework: setup your workstation
 
 ## 2. HTML
 
-### [1. HTML](https://docs.google.com/presentation/d/1-WlJnKmr6ynL4WUZJil6obJh9oprSjmBjbcLUy2cono/)
+### [HTML_01](https://docs.google.com/presentation/d/1-WlJnKmr6ynL4WUZJil6obJh9oprSjmBjbcLUy2cono/)
 
 - HTML introduction
 - To build a webpage
@@ -36,7 +36,7 @@ homework: setup your workstation
 homework: To build a menu page by HTML
 ```
 
-### [2. HTML](https://docs.google.com/presentation/d/1r0TU7E9Lk2z983BYW-Olu0LygFIOR_1P2apGeN6cRrY/)
+### [HTML_02](https://docs.google.com/presentation/d/1r0TU7E9Lk2z983BYW-Olu0LygFIOR_1P2apGeN6cRrY/)
 
 - Form
 - method, button, inputs
@@ -54,7 +54,7 @@ homework: To build a reservation page for restaurant by HTML
 
 ## 3. CSS
 
-### [3. CSS-1](https://docs.google.com/presentation/d/1zb_wziZ2ZXC-q9s3v7kgqondwDCTugp4DO6cWqnPwT4/)
+### [3. CSS_01](https://docs.google.com/presentation/d/1zb_wziZ2ZXC-q9s3v7kgqondwDCTugp4DO6cWqnPwT4/)
 
 - CSS 基本語法認識與程式碼放置位置
 - Selector: element, ID, classs, attribute
@@ -69,7 +69,7 @@ homework: To build a reservation page for restaurant by HTML
 homework: Base on 2-1 homework, to use CSS style your page
 ```
 
-### [4. CSS-2](https://docs.google.com/presentation/d/10HbYd1trhdtSu6KBP7NBPxB81-2mK6qGluNoAk-e_p4/)
+### [4. CSS_02](https://docs.google.com/presentation/d/10HbYd1trhdtSu6KBP7NBPxB81-2mK6qGluNoAk-e_p4/)
 
 - text-align, letter spacing, line height
 - font-family, font-weight, text-indent
@@ -85,7 +85,7 @@ homework: Base on 2-1 homework, to use CSS style your page
 homework: To build a calendar page with HTML & CSS
 ```
 
-### [5. CSS-3](https://docs.google.com/presentation/d/1mbwgCORR19x3PaZXDu7bJqbTeAXshIYtbY5xiMhhYX4/)
+### [5. CSS_03](https://docs.google.com/presentation/d/1mbwgCORR19x3PaZXDu7bJqbTeAXshIYtbY5xiMhhYX4/)
 
 - position: static, relative, absolute, fixed, sticky
 - flex layout
@@ -116,7 +116,7 @@ homework: To build a porfolio page with header in pages
 
 ## 4. Git
 
-### [7. Git](https://docs.google.com/presentation/d/16Kif4pmDJg9BrD4aEPnxww1OaHzplwYnF7drP1_0Q2c/)
+### [Git](https://docs.google.com/presentation/d/1XD6v_3u2pxLbwltzSp4HO-nMU994mHYSB59U-p-FKhE/edit#slide=id.p)
 
 - Introduction
 - Installation
@@ -133,7 +133,7 @@ homework: upload first project on Github
 
 ## 5. JavaScript
 
-### [8. JavaScript-1](https://docs.google.com/presentation/d/16Kif4pmDJg9BrD4aEPnxww1OaHzplwYnF7drP1_0Q2c/)
+### [JavaScript_01](https://docs.google.com/presentation/d/16Kif4pmDJg9BrD4aEPnxww1OaHzplwYnF7drP1_0Q2c/)
 
 - Introduction
 - Syntax
@@ -147,7 +147,7 @@ homework: upload first project on Github
 homework: To create 4 buttons and function to implement +, -, *, /
 ```
 
-### [9. JavaScript-2](https://docs.google.com/presentation/d/1UxVlghL8E9qkrkunE19MUd39YbklNbtmUcJhgFJM4JU/)
+### [JavaScript_02](https://docs.google.com/presentation/d/1UxVlghL8E9qkrkunE19MUd39YbklNbtmUcJhgFJM4JU/)
 
 - console.log
 - Data Types
@@ -163,7 +163,7 @@ homework: To create 4 buttons and function to implement +, -, *, /
 homework:
 ```
 
-### [10. JavaScript-3](https://docs.google.com/presentation/d/1TQx1R0n_tqWncff52kVUC-GO911CqIRcF17UX6HCHyg/)
+### [JavaScript_03](https://docs.google.com/presentation/d/1TQx1R0n_tqWncff52kVUC-GO911CqIRcF17UX6HCHyg/)
 
 - Numbers & Number Methods
 - Strings & String methods
@@ -175,7 +175,7 @@ homework:
 homework: to use switch to make star sign or alcohol menu
 ```
 
-### [11. JavaScript-4](https://docs.google.com/presentation/d/1B_m6HSeBffvq8_JZ-mQf0EFn4cTR8tT8o0_aDQHxBZs/)
+### [JavaScript_04](https://docs.google.com/presentation/d/1B_m6HSeBffvq8_JZ-mQf0EFn4cTR8tT8o0_aDQHxBZs/)
 
 - CLI
 - Events
@@ -187,9 +187,19 @@ homework: to use switch to make star sign or alcohol menu
 homework: Ninety-nine multiplication table
 ```
 
+### [JavaScript_05](https://docs.google.com/presentation/d/1cflki8Sq8OrRH611V_8MbLnWhvRdc9YnLiREu3a5AE4/)
+
+- Spread Operator & rest Operator
+- querySelector
+- map()
+
+```
+homework: Ninety-nine multiplication table
+```
+
 ## 6. React.js
 
-### [12. React.js - 01](https://docs.google.com/presentation/d/17QwU1McgvM90c6PI7RDpOQt2YoyHYf5Hxdmy_L1jkG4/)
+### [React_01](https://docs.google.com/presentation/d/17QwU1McgvM90c6PI7RDpOQt2YoyHYf5Hxdmy_L1jkG4/)
 
 - Introduction
 - (JS) Arrow function
@@ -203,7 +213,7 @@ homework: Ninety-nine multiplication table
 homework: components, pages, and news
 ```
 
-### [13. React.js - 02](https://docs.google.com/presentation/d/1wQBB87_DP4bL2z9AmMb9RFxJvRjXM4BRGXK5z-kV01E/)
+### [React_02](https://docs.google.com/presentation/d/1wQBB87_DP4bL2z9AmMb9RFxJvRjXM4BRGXK5z-kV01E/)
 
 - What is a hook
 - useState
@@ -214,17 +224,7 @@ homework: components, pages, and news
 homework: Todo list
 ```
 
-### [14. React.js - 03](https://docs.google.com/presentation/d/1cflki8Sq8OrRH611V_8MbLnWhvRdc9YnLiREu3a5AE4/edit#slide=id.p)
-
-- (JS) Spread operator, Rest operator
-- (JS) querySelector
-- (JS) map()
-
-```
-homework: Todo list
-```
-
-### [15. React.js - 04](https://docs.google.com/presentation/d/103z6-n203-o8npzUR4EOAXDwgIDK9kO8xkmOQpsRwFE/edit#slide=id.p)
+### [React_04](https://docs.google.com/presentation/d/103z6-n203-o8npzUR4EOAXDwgIDK9kO8xkmOQpsRwFE/edit#slide=id.p)
 
 - (JS) Regular expressions
 - From verify with hook
@@ -233,7 +233,7 @@ homework: Todo list
 homework: register page
 ```
 
-### [16. React.js - 05](https://docs.google.com/presentation/d/103z6-n203-o8npzUR4EOAXDwgIDK9kO8xkmOQpsRwFE/edit#slide=id.p)
+### [React_05](https://docs.google.com/presentation/d/103z6-n203-o8npzUR4EOAXDwgIDK9kO8xkmOQpsRwFE/edit#slide=id.p)
 
 - useContext
 
