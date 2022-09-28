@@ -54,7 +54,7 @@ homework: To build a reservation page for restaurant by HTML
 
 ## 3. CSS
 
-### [3. CSS](https://docs.google.com/presentation/d/1zb_wziZ2ZXC-q9s3v7kgqondwDCTugp4DO6cWqnPwT4/)
+### [3. CSS-1](https://docs.google.com/presentation/d/1zb_wziZ2ZXC-q9s3v7kgqondwDCTugp4DO6cWqnPwT4/)
 
 - CSS 基本語法認識與程式碼放置位置
 - Selector: element, ID, classs, attribute
@@ -69,7 +69,7 @@ homework: To build a reservation page for restaurant by HTML
 homework: Base on 2-1 homework, to use CSS style your page
 ```
 
-### [4. CSS](https://docs.google.com/presentation/d/10HbYd1trhdtSu6KBP7NBPxB81-2mK6qGluNoAk-e_p4/)
+### [4. CSS-2](https://docs.google.com/presentation/d/10HbYd1trhdtSu6KBP7NBPxB81-2mK6qGluNoAk-e_p4/)
 
 - text-align, letter spacing, line height
 - font-family, font-weight, text-indent
@@ -85,7 +85,7 @@ homework: Base on 2-1 homework, to use CSS style your page
 homework: To build a calendar page with HTML & CSS
 ```
 
-### [5. CSS](https://docs.google.com/presentation/d/1mbwgCORR19x3PaZXDu7bJqbTeAXshIYtbY5xiMhhYX4/)
+### [5. CSS-3](https://docs.google.com/presentation/d/1mbwgCORR19x3PaZXDu7bJqbTeAXshIYtbY5xiMhhYX4/)
 
 - position: static, relative, absolute, fixed, sticky
 - flex layout
@@ -99,7 +99,7 @@ homework: To build a calendar page with HTML & CSS
 homework: To create a simple animation and header in pages
 ```
 
-### [6. CSS](https://docs.google.com/presentation/d/1fw2JPKNHeg45vUPy0zTbH60L4HxrjXpeJSlKMD6LE_k/)
+### [6. CSS-4](https://docs.google.com/presentation/d/1fw2JPKNHeg45vUPy0zTbH60L4HxrjXpeJSlKMD6LE_k/)
 
 - opacity and display:none, visibility:hidden
 - float, clear
@@ -133,7 +133,7 @@ homework: upload first project on Github
 
 ## 5. JavaScript
 
-### [8. JavaScript](https://docs.google.com/presentation/d/16Kif4pmDJg9BrD4aEPnxww1OaHzplwYnF7drP1_0Q2c/)
+### [8. JavaScript-1](https://docs.google.com/presentation/d/16Kif4pmDJg9BrD4aEPnxww1OaHzplwYnF7drP1_0Q2c/)
 
 - Introduction
 - Syntax
@@ -147,7 +147,7 @@ homework: upload first project on Github
 homework: To create 4 buttons and function to implement +, -, *, /
 ```
 
-### [9. JavaScript](https://docs.google.com/presentation/d/1UxVlghL8E9qkrkunE19MUd39YbklNbtmUcJhgFJM4JU/)
+### [9. JavaScript-2](https://docs.google.com/presentation/d/1UxVlghL8E9qkrkunE19MUd39YbklNbtmUcJhgFJM4JU/)
 
 - console.log
 - Data Types
@@ -163,7 +163,7 @@ homework: To create 4 buttons and function to implement +, -, *, /
 homework:
 ```
 
-### [10. JavaScript](https://docs.google.com/presentation/d/1TQx1R0n_tqWncff52kVUC-GO911CqIRcF17UX6HCHyg/)
+### [10. JavaScript-3](https://docs.google.com/presentation/d/1TQx1R0n_tqWncff52kVUC-GO911CqIRcF17UX6HCHyg/)
 
 - Numbers & Number Methods
 - Strings & String methods
@@ -175,7 +175,7 @@ homework:
 homework: to use switch to make star sign or alcohol menu
 ```
 
-### [11. JavaScript](https://docs.google.com/presentation/d/1B_m6HSeBffvq8_JZ-mQf0EFn4cTR8tT8o0_aDQHxBZs/)
+### [11. JavaScript-4](https://docs.google.com/presentation/d/1B_m6HSeBffvq8_JZ-mQf0EFn4cTR8tT8o0_aDQHxBZs/)
 
 - CLI
 - Events
@@ -313,3 +313,7 @@ homework:
 ```
 homework:
 ```
+
+
+### TBD
+- (JS) destructuring assignment 解構賦值

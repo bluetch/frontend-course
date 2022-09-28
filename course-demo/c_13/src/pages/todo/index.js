@@ -56,7 +56,7 @@ export const Todo = () => {
 
   return (
     <Layout>
-      <h1>Todo List in 2022</h1>
+      <h1 className={styles.h1}>Todo List in 2022</h1>
       <div className={styles.grid}>
         <div className={styles.actions}>
           <label htmlFor="name">

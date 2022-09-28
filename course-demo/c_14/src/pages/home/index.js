@@ -1,10 +1,16 @@
 import { useEffect } from 'react';
 import { Button, Layout } from '../../components/';
+import { useToastContext } from '../../hooks/useToast';
 import styles from './home.module.scss'
 
+
 const Message = (props) => {
+  const { errorToast } = useToastContext();
 
   const handleClick = () => {
+    errorToast(
+      `無法讀取，請確認網路狀態或稍後再試。`
+    );
   }
   return (
     <div className={styles.message}>

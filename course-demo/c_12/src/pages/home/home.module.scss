@@ -9,6 +9,12 @@
   .content{
     width: 70%;
     padding: 0 20px;
+    &:hover{
+      cursor: pointer;
+      h3{
+        color: #435cda;
+      }
+    }
     h3{
       margin: 0 0 16px;
     }

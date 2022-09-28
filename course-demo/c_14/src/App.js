@@ -1,16 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header, Footer } from './components';
+import { Example } from "./pages/example";
 import { Register } from "./pages/register";
-import { Home } from "./pages/home";
 import './styles/global.scss';
 
 const App = () => {
   return (
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/register" element={<Register />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Example />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
   );
 }
