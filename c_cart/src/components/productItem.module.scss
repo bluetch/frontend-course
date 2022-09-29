@@ -1,0 +1,16 @@
+.productCard {
+  box-shadow: 2px 2px 5px #ccc;
+  padding: 12px;
+  img {
+    width: 100%;
+  }
+  p{
+    margin-bottom: 12px;
+  }
+  .actions{
+    margin: 20px 0;
+    .count{
+      margin: 0 12px;
+    }
+  }
+}

@@ -5,7 +5,7 @@ import styles from './home.module.scss';
 export const Home = () => {
 
   useEffect(() => {
-    document.title = "c12 首頁";
+    document.title = "c13 首頁";
   }, []);
 
   return (

@@ -8,7 +8,6 @@ import { ProductContext } from "./services/product/ProductContext";
 import './styles/global.scss';
 
 function App() {
-
   const [totalCartItems, setTotalCartItems] = useState(0);
   const [cartItem, dispatch] = useReducer(CartReducer, []);
   const [products, productDispatch] = useReducer(ProductReducer, []);
@@ -35,21 +34,19 @@ function App() {
   }, [cartItem]);
 
   return (
-    <>
-      <ProductContext.Provider value={{ products, productDispatch }}>
-        <CartContext.Provider value={{ cartItem, dispatch }}>
-          <header className="header">
-            <h1>Ken's Shop</h1>
-            <button className="cart" onClick={openCart}>
-              購物車
-              <span className="cart-badge">{totalCartItems}</span>
-            </button>
-          </header>
-          <ProductList />
-          <CartList closeCart={closeCart} show={cartModal.show} />
-        </CartContext.Provider>
-      </ProductContext.Provider>
-    </>
+    <ProductContext.Provider value={{ products, productDispatch }}>
+      <CartContext.Provider value={{ cartItem, dispatch }}>
+        <header className="header">
+          <h1>Ken's Shop</h1>
+          <button className="cart" onClick={openCart}>
+            購物車
+            <span className="cart-badge">{totalCartItems}</span>
+          </button>
+        </header>
+        <ProductList />
+        <CartList closeCart={closeCart} show={cartModal.show} />
+      </CartContext.Provider>
+    </ProductContext.Provider>
   );
 }
 

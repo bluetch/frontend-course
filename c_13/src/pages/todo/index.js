@@ -52,7 +52,7 @@ export const Todo = () => {
       setErrorDate(null);
     }
 
-    if(!inputDateRef.current.value || !inputNameRef.current.value){
+    if (!inputDateRef.current.value || !inputNameRef.current.value) {
       return;
     }
 
@@ -81,13 +81,13 @@ export const Todo = () => {
             <input type="text" id="name" ref={inputNameRef} />
             {errorName && (<span className={styles.error}>{errorName}</span>)}
           </label>
-          
+
           <label htmlFor="name">
             <span>預計完成日期:</span>
             <input type="date" id="date" ref={inputDateRef} />
             {errorDate && (<span className={styles.error}>{errorDate}</span>)}
           </label>
-          
+
           <Button onClick={() => handleAdd()}>新增</Button>
         </div>
         <div className={styles.todos}>

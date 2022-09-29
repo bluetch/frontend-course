@@ -250,7 +250,7 @@ homework: toast
 homework:
 ```
 
-### [React.js_07_]()
+### [React.js_07]()
 
 - useMemo
 - TypeScript
@@ -304,28 +304,46 @@ homework:
 homework:
 ```
 
-## 10. Interview
+## 10. LeetCode
 
-### [Interview_01]()
+### [LeetCode_01]()
 
-LeetCode
-1. Two Sum (Easy)
-2. Add Two Numbers (Medium)
-3. Longest Substring Without Repeating Characters
-
+- [Two Sum (Easy)](https://leetcode.com/problems/two-sum/)
+- [Palindrome Number (Easy)](https://leetcode.com/problems/palindrome-number/)
+- [Roman to Integer (Easy)](https://leetcode.com/problems/roman-to-integer/)
 ```
-homework:
+homework: Submit Solution in your account
 ```
 
-### [Interview_02]()
+### [LeetCode_02]()
 
-LeetCode
-5. Longest Palindromic Substring
-7. Reverse Interger
-9. Palindrome Number
+- [Longest Common Prefix (Easy)](https://leetcode.com/problems/longest-common-prefix/)
+- [Valid Parentheses (Easy)](https://leetcode.com/problems/valid-parentheses/)
+- [Merge Two Sorted Lists (Easy)](https://leetcode.com/problems/merge-two-sorted-lists/)
 
 ```
-homework: Palindrome Number
+homework: Submit Solution in your account
+```
+
+### [LeetCode_03]()
+
+- [Add Two Numbers (Medium)](https://leetcode.com/problems/add-two-numbers/)
+- [Longest Substring Without Repeating Characters (Medium)](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- [Longest Palindromic Substring (Medium)](https://leetcode.com/problems/longest-palindromic-substring/)
+
+
+```
+homework: Submit Solution in your account
+```
+
+### [LeetCode_04]()
+
+- [Reverse Interger (Medium)](https://leetcode.com/problems/reverse-integer/)
+- [Container With Most Water (Medium)](https://leetcode.com/problems/container-with-most-water/)
+- [Rotate Image (Medium)](https://leetcode.com/problems/rotate-image/)
+
+```
+homework: Submit Solution in your account
 ```
 
 

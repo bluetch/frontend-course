@@ -9,14 +9,15 @@ import {
 } from "./../services/cart/action-types";
 import { FETCH_PRODUCTS } from "./../services/product/action-types";
 
-import { ProductCard } from "./ProductCard";
+import { ProductItem } from "./ProductItem";
 import { mockProducts } from "./../mock/product";
+import styles from "./productList.module.scss";
 
 export const ProductList = () => {
   const { cartItem, dispatch } = useContext(CartContext);
   const { products, productDispatch } = useContext(ProductContext);
 
-  const fetchProducts = () =>{
+  const fetchProducts = () => {
     // 有API的話從這邊拉
     const data = mockProducts;
     productDispatch({
@@ -26,42 +27,62 @@ export const ProductList = () => {
   }
 
   const addToCart = (item) => {
-    item.isAddtoCart = true;
-    item.count = 1;
+    item.isAddedtoCart = true;
+    item.count--;
     dispatch({
       type: ADD_CART_ITEM,
       payload: item,
     })
   }
 
-  const removeFromCart = () => {
+  const removeFromCart = (item) => {
+    item.isAddedtoCart = false;
+    item.count = 0;
+    dispatch({
+      type: REMOVE_CART_ITEM,
+      payload: item,
+    });
+  };
 
-  }
+  const incrementItem = (item) => {
+    item.isAddedtoCart = true;
+    if (item.count > 0) {
+      item.count = item.count + 1;
+    }
+    dispatch({
+      type: UPDATE_CART_ITEM_COUNT,
+      payload: item,
+    });
+  };
 
-  const incrementItem = () => {
+  const decrementItem = (item) => {
+    item.isAddedtoCart = true;
+    if (item.count > 0) {
+      item.count = item.count - 1;
+    }
+    dispatch({
+      type: UPDATE_CART_ITEM_COUNT,
+      payload: item,
+    });
+  };
 
-  }
-  const decrementItem = () => {
+  useEffect(() => {
+    console.log("Cart item updated")
+  }, [cartItem]);
 
-  }
-
-  // useEffect(()=>{
-  //   console.log("Cart item updated")
-  // },[cartItem]);
-
-  useEffect(()=>{
+  useEffect(() => {
     fetchProducts();
-  },[])
+  }, [])
 
-  useEffect(()=>{
-console.log(products)
-  },[products])
+  useEffect(() => {
+    console.log(products)
+  }, [products])
 
   return (
-    <div className="grid">
+    <div className={styles.productList}>
       {products.items ? products.items.map((item) => {
         return (
-          <ProductCard
+          <ProductItem
             key={item.id}
             product={item}
             addToCart={addToCart}
