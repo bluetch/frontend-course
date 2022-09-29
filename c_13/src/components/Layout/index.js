@@ -1,8 +1,8 @@
 import styles from './layout.module.scss';
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children, className }) => {
   return (
-    <main className={styles.layout}>
+    <main className={`${styles.layout} ${className}`}>
       {children}
     </main>
   );
