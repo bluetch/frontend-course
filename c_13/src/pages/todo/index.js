@@ -13,18 +13,20 @@ const data = [
     id: 2,
     name: "重新設計個人網站",
     state: false,
-    dueDate: "2022-09-11",
+    dueDate: "2022-10-31",
   },
   {
     id: 3,
     name: "完成前端線上影片課程",
     state: false,
-    dueDate: "2022-10-31",
+    dueDate: "2022-12-31",
   },
 ];
 
 export const Todo = () => {
   const [todos, setTodos] = useState(data);
+  const [errorName, setErrorName] = useState(null);
+  const [errorDate, setErrorDate] = useState(null);
   const inputNameRef = useRef();
   const inputDateRef = useRef();
 
@@ -39,6 +41,21 @@ export const Todo = () => {
   }
 
   const handleAdd = () => {
+    if (!inputNameRef.current.value) {
+      setErrorName("請輸入名稱");
+    } else {
+      setErrorName(null);
+    }
+    if (!inputDateRef.current.value) {
+      setErrorDate("請選擇日期");
+    } else {
+      setErrorDate(null);
+    }
+
+    if(!inputDateRef.current.value || !inputNameRef.current.value){
+      return;
+    }
+
     setTodos([...todos,
     {
       id: todos.length + 1,
@@ -62,11 +79,15 @@ export const Todo = () => {
           <label htmlFor="name">
             <span>名稱:</span>
             <input type="text" id="name" ref={inputNameRef} />
+            {errorName && (<span className={styles.error}>{errorName}</span>)}
           </label>
+          
           <label htmlFor="name">
             <span>預計完成日期:</span>
             <input type="date" id="date" ref={inputDateRef} />
+            {errorDate && (<span className={styles.error}>{errorDate}</span>)}
           </label>
+          
           <Button onClick={() => handleAdd()}>新增</Button>
         </div>
         <div className={styles.todos}>
@@ -75,7 +96,7 @@ export const Todo = () => {
             return (
               <div className={styles.todo} key={`todo-${index}`}>
                 <h3>
-                  {item.id}.{item.name}
+                  <span>{item.id}.{item.name}</span>
                   <span className={item.state ? styles.finish : styles.tag}>{tag}</span>
                 </h3>
                 <p>{item.state ? "完成日期：" : "預計完成日期："}{item.dueDate}</p>
@@ -84,7 +105,6 @@ export const Todo = () => {
             )
           })}
         </div>
-
       </div>
     </Layout>
   )
