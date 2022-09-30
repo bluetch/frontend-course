@@ -68,7 +68,7 @@ export const Todo = () => {
   }
 
   useEffect(() => {
-    document.title = "Todo list";
+    document.title = "c_14 Todo list";
   }, [])
 
   return (

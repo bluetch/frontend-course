@@ -208,7 +208,6 @@ homework: 3 components, 4 pages, and one page inlude news components
 - What is a hook
 - useState
 - useEffect
-- useRef
 - (JS) template literals
 
 ```
@@ -217,11 +216,11 @@ homework: Todo list
 
 ### [React_03](https://docs.google.com/presentation/d/103z6-n203-o8npzUR4EOAXDwgIDK9kO8xkmOQpsRwFE/edit#slide=id.p)
 
-
+- useRef
 - (JS) Spread Operator & rest Operator
 - (JS) querySelector
 - (JS) map(), forEach()
-- useState, useRef, useEffect practice
+
 
 
 ```
@@ -234,16 +233,16 @@ homework: Todo list
 - (JS) RegExp.test()
 - (JS) event.preventDefault()
 - placeholder
-- useState, useRef, useEffect practice
+- homework implement & demo
 
 ```
 homework: register page
 ```
 
-### [React_05]()
+### [React_05](https://docs.google.com/presentation/d/103z6-n203-o8npzUR4EOAXDwgIDK9kO8xkmOQpsRwFE/edit#slide=id.p)
 
 - useContext
-- 
+- homework demo & implement
 
 ```
 homework: dark mode
@@ -253,6 +252,7 @@ homework: dark mode
 
 - useReducer
 - useCallback
+- homework demo & implement
 
 ```
 homework:
@@ -260,48 +260,19 @@ homework:
 
 ### [React.js_07]()
 
+- React.memo
 - useMemo
-- TypeScript
+- homework demo & implement
 
 ```
 homework:
 ```
 
-## 7. [Next.js]()
-
-- Getting Started
-- Pages
-- Data Fetching
-- (JS) JSON
-- Dynamic Routes
-- API Routes
-- Testing / Jest
-
-```
-homework:
-```
-
-## 8. [TailwindCSS]()
-
-- Get started
-- Core concept
-- Customization
-- Layout
-- Flexbox & Grid
-- Spacing
-- Size
-- Typography
-- Backgrounds
-- Border
-
-```
-homework:
-```
-
-## 9. [RESTfulAPI]()
+## 7. [RESTfulAPI]()
 
 - Intro RESTful API
 - Chrome Inspect: Network
+- https://mockapi.io/
 - Get Data
 - Post Data
 - Put Data
@@ -312,7 +283,7 @@ homework:
 homework:
 ```
 
-## 10. LeetCode
+## 8. LeetCode
 
 ### [LeetCode_01]()
 
@@ -355,5 +326,36 @@ homework: Submit Solution in your account
 ```
 
 
-### TBD
+# Extra
 - (JS) destructuring assignment 解構賦值
+
+## [Next.js]()
+
+- Getting Started
+- Pages
+- Data Fetching
+- (JS) JSON
+- Dynamic Routes
+- API Routes
+- Testing / Jest
+
+```
+homework:
+```
+
+## [TailwindCSS]()
+
+- Get started
+- Core concept
+- Customization
+- Layout
+- Flexbox & Grid
+- Spacing
+- Size
+- Typography
+- Backgrounds
+- Border
+
+```
+homework:
+```
