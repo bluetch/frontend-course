@@ -187,16 +187,6 @@ homework: to use switch to make star sign or alcohol menu
 homework: Ninety-nine multiplication table
 ```
 
-### [JavaScript_05](https://docs.google.com/presentation/d/1cflki8Sq8OrRH611V_8MbLnWhvRdc9YnLiREu3a5AE4/)
-
-- Spread Operator & rest Operator
-- querySelector
-- map()
-
-```
-homework: Ninety-nine multiplication table
-```
-
 ## 6. React.js
 
 ### [React_01](https://docs.google.com/presentation/d/17QwU1McgvM90c6PI7RDpOQt2YoyHYf5Hxdmy_L1jkG4/)
@@ -210,7 +200,7 @@ homework: Ninety-nine multiplication table
 - props
 
 ```
-homework: components, pages, and news
+homework: 3 components, 4 pages, and one page inlude news components
 ```
 
 ### [React_02](https://docs.google.com/presentation/d/1wQBB87_DP4bL2z9AmMb9RFxJvRjXM4BRGXK5z-kV01E/)
@@ -219,6 +209,20 @@ homework: components, pages, and news
 - useState
 - useEffect
 - useRef
+- (JS) template literals
+
+```
+homework: Todo list
+```
+
+### [React_03](https://docs.google.com/presentation/d/103z6-n203-o8npzUR4EOAXDwgIDK9kO8xkmOQpsRwFE/edit#slide=id.p)
+
+
+- (JS) Spread Operator & rest Operator
+- (JS) querySelector
+- (JS) map(), forEach()
+- useState, useRef, useEffect practice
+
 
 ```
 homework: Todo list
@@ -227,18 +231,22 @@ homework: Todo list
 ### [React_04](https://docs.google.com/presentation/d/103z6-n203-o8npzUR4EOAXDwgIDK9kO8xkmOQpsRwFE/edit#slide=id.p)
 
 - (JS) Regular expressions
-- From verify with hook
+- (JS) RegExp.test()
+- (JS) event.preventDefault()
+- placeholder
+- useState, useRef, useEffect practice
 
 ```
 homework: register page
 ```
 
-### [React_05](https://docs.google.com/presentation/d/103z6-n203-o8npzUR4EOAXDwgIDK9kO8xkmOQpsRwFE/edit#slide=id.p)
+### [React_05]()
 
 - useContext
+- 
 
 ```
-homework: toast
+homework: dark mode
 ```
 
 ### [React_06]()

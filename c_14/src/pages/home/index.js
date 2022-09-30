@@ -1,59 +1,44 @@
 import { useEffect } from 'react';
-import { Button, Layout } from '../../components/';
-import { useToastContext } from '../../hooks/useToast';
-import styles from './home.module.scss'
-
-
-const Message = (props) => {
-  const { errorToast } = useToastContext();
-
-  const handleClick = () => {
-    errorToast(
-      `無法讀取，請確認網路狀態或稍後再試。`
-    );
-  }
-  return (
-    <div className={styles.message}>
-      <img src={props.img} alt={props.title} />
-      <div className={styles.content}>
-        <p className={styles.date}>{props.date}</p>
-        <h3>{props.title}</h3>
-        <p>{props.summary}</p>
-        <Button onClick={handleClick}>閱讀</Button>
-      </div>
-    </div>
-  )
-}
+import { Layout } from '../../components';
+import styles from './home.module.scss';
 
 export const Home = () => {
 
-
   useEffect(() => {
-    document.title = "C_13";
+    document.title = "c13 首頁";
   }, []);
 
   return (
-    <Layout>
-      <div className="container">
-        <h1>Home 財經新聞</h1>
-        <Message
-          title="美晶片法迫使半導體大廠選邊站 智庫專家：中國目前束手無策"
-          img="https://s.yimg.com/ny/api/res/1.2/ChUWO8hLI1Gwz.1rCs6DQg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTM5NztjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/Om5SgTRWqBhzpGsTne.Avg--~B/aD0yMTQ7dz0zODA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/ko/cnyes.com.tw/120c8fda2409f517d526ccd1bb62299e"
-          date="2022年8月17日"
-          summary="美國總統拜登 (Joe Biden) 本月簽署晶片與科學法案 (CHIPS and Science Act) 後，台積電、三星電子等半導體大廠被迫選邊站，中國的回應備受關注。專家認為，即使對此感到不滿，北京政府目前仍無法做出有力回應。"
-        />
-        <Message
-          title="通膨數據趨緩 高成長產業有錢景"
-          img="https://s.yimg.com/ny/api/res/1.2/nwKxELwUspAJ2IZsvHDfNA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/OJkGhjxIJYdmnekRzbs8Bw--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/ko/mirrormedia.mg/041a0a2e54c5960d813974c86dc19a93"
-          date="2022年8月16日"
-          summary="美國上週公布的7月消費者物價指數年增率為8.5％，不僅低於前期的9.1％，更是低於預期的8.7％。這樣的數字一出，也讓市場對於聯準會在9月升息3碼的預期大幅下降，認為更有可能的結果將會是升息2碼。"
-        />
-        <Message
-          title="狙殺死敵！台積電３奈米來了 7大客戶排隊"
-          img="https://images.chinatimes.com/newsphoto/2022-08-17/1024/20220817001097.jpg"
-          date="2022年8月15日"
-          summary="據業界人士指出，今年底蘋果將是第一家採用3奈米投片客戶，英特爾明年下半年將擴大採用3奈米生產處理器內晶片塊（tiles），包括超微、輝達、高通、聯發科、博通等，會在明年及後年陸續完成3奈米新晶片開案。"
-        />
+    <Layout className={styles.home}>
+      <div className={styles.flex}>
+        <aside className={styles.aside}>
+          <ul>
+            <li>useState</li>
+            <li>useEffect</li>
+            <li>useRef</li>
+          </ul>
+        </aside>
+        <article className={styles.article}>
+          <h1>Home</h1>
+          <h3>What is Hook</h3>
+          <p>Hook 是 React 16.8 中增加的新功能。它讓你不必寫 class 就能使用 state 以及其他 React 的功能。
+            Hook 是 function，他讓你可以從 function component「hook into」React state 與生命週期功能。Hook 在 class 裡面沒有辦法用——他們讓你不用 class 就能使用 React。
+          </p>
+          <p>React 提供一些內建 Hook 像是 useState。你也可以打造你自己的 Hook 用來在不同的 component 之間重複使用 stateful 邏輯。我們先來看看內建 Hook。</p>
+          <hr />
+          <h3>useState</h3>
+          <p>useState 會回傳一個包含兩個值的 array，第一個值是 state、第二個值是用來更新 state 的函式。每當 state 值改變，就會觸發 re-render</p>
+          <img src="/images/usestate.jpg" alt="" />
+          <hr />
+          <h3>useEffect</h3>
+          <p>任何會產生 side Effect 的行為都應該 Effect Hook 裡執行。他和 componentDidMount，componentDidUpdate，與 componentWillUnmount 有著同樣的宗旨，但整合進一個單一的 API。</p>
+          <img src="/images/useeffect.jpg" alt="" />
+          <p>useEffect 有兩個參數，第一個參數是 Effect function，第二個則是 depandancy array。 根據不同 depandancy 決定何時要執行 Effect function</p>
+          <hr />
+          <h3>useRef</h3>
+          <img src="/images/useref.jpg" alt="" />
+          <p>除了可以在不 re-render 的狀態下更新值，也可以直接抓取 DOM 進而控制 DOM 的行為 (Imperative)</p>
+        </article>
       </div>
     </Layout>
   )

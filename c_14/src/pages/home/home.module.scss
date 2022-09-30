@@ -1,20 +1,22 @@
-.message {
-  margin: 20px 0;
-  padding: 20px;
-  border: 1px solid gray;
-  display: flex;
-  img {
-    width: 30%;
+.home{
+  h1{
+    text-align: left;
+    font-size: 40px;
   }
-  .content {
-    width: 70%;
-    padding: 0 20px;
-    h3 {
-      margin: 0 0 16px;
+  hr{
+    margin: 60px 0;
+  }
+  .flex{
+    display: flex;
+    aside{
+      width: 20%;
     }
-    .date {
-      color: gray;
-      margin: 0 0 4px;
+    article{
+      width: 80%;
     }
+  }
+  img{
+    width: 100%;
+    margin: 20px 0;
   }
 }

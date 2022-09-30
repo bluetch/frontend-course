@@ -1,0 +1,21 @@
+.App{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counter{
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 32px;
+  .number{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 48px;
+  }
+  .actions{
+    button{
+      margin: 0 12px;
+    }
+  }
+}

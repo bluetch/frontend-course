@@ -1,86 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2022 Calendar</title>
-  <style>
-    .grid{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-    }
-    .month{
-      background-color: cadetblue;
-    }
-    .month-grid{
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-    }
-    .date{
-      font-size: 20px;
-      text-align: center;
-    }
-    .date:hover{
-      background-color: white;
-      color: cadetblue;
-    }
-    .holiday{
-      color: red;
-    }
-  </style>
-</head>
-<body>
-  <header>2022 Calendar</header>
-  <div class="grid">
-    <div class="month">
-      <h2>January</h2>
-      <div class="month-grid">
-        <div class="date holiday">1</div>
-        <div class="date holiday">2</div>
-        <div class="date">3</div>
-        <div class="date">4</div>
-        <div class="date">5</div>
-        <div class="date">6</div>
-        <div class="date">7</div>
-        <div class="date holiday">8</div>
-        <div class="date holiday">9</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">xx</div>
-        <div class="date">31</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022 Calendar</title>
+    <style>
+      body{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+      header {
+        text-align: center;
+        color: #638BF0;
+        font-size: 30px;
+        padding: 20px 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+      .month {
+        padding: 12px;
+      }
+      .month-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+      }
+      .month-number {
+        display: inline-block;
+        background: #638BF0;
+        border-radius: 50%;
+        color: white;
+        margin-right: 8px;
+        font-size: 20px;
+        padding: 2px 4px;
+        width: 20px;
+        text-align: center;
+      }
+      .date {
+        font-size: 16px;
+        text-align: center;
+        padding: 6px;
+      }
+      .date:hover {
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .holiday {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>2022 Calendar</header>
+    <div class="grid">
+      <div class="month">
+        <h2>
+          <span class="month-number">1</span>January</h2>
+        <div class="month-grid">
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date holiday">1</div>
+          <div class="date holiday">2</div>
+          <div class="date">3</div>
+          <div class="date">4</div>
+          <div class="date">5</div>
+          <div class="date">6</div>
+          <div class="date">7</div>
+          <div class="date holiday">8</div>
+          <div class="date holiday">9</div>
+          <div class="date">10</div>
+          <div class="date">11</div>
+          <div class="date">12</div>
+          <div class="date">13</div>
+          <div class="date">14</div>
+          <div class="date holiday">15</div>
+          <div class="date holiday">16</div>
+          <div class="date">17</div>
+          <div class="date">18</div>
+          <div class="date">19</div>
+          <div class="date">20</div>
+          <div class="date">21</div>
+          <div class="date">22</div>
+          <div class="date holiday">23</div>
+          <div class="date">24</div>
+          <div class="date">25</div>
+          <div class="date">26</div>
+          <div class="date">27</div>
+          <div class="date">28</div>
+          <div class="date holiday">29</div>
+          <div class="date holiday">30</div>
+          <div class="date">31</div>
+        </div>
+      </div>
+      <div class="month">
+        <h2>
+          <span class="month-number">2</span>February</h2>
+        <div class="month-grid">
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date holiday">1</div>
+          <div class="date holiday">2</div>
+          <div class="date holiday">3</div>
+          <div class="date holiday">4</div>
+          <div class="date holiday">5</div>
+          <div class="date holiday">6</div>
+          <div class="date">7</div>
+          <div class="date">8</div>
+          <div class="date">9</div>
+          <div class="date">10</div>
+          <div class="date">11</div>
+          <div class="date holiday">12</div>
+          <div class="date holiday">13</div>
+          <div class="date">14</div>
+          <div class="date">15</div>
+          <div class="date">16</div>
+          <div class="date">17</div>
+          <div class="date">18</div>
+          <div class="date holiday">19</div>
+          <div class="date holiday">20</div>
+          <div class="date">21</div>
+          <div class="date">22</div>
+          <div class="date">23</div>
+          <div class="date">24</div>
+          <div class="date">25</div>
+          <div class="date holiday">26</div>
+          <div class="date holiday">27</div>
+          <div class="date">28</div>
+        </div>
+      </div>
+      <div class="month">
+        <h2>
+          <span class="month-number">3</span>March</h2>
+        <div class="month-grid">
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date">1</div>
+          <div class="date">2</div>
+          <div class="date">3</div>
+          <div class="date">4</div>
+          <div class="date holiday">5</div>
+          <div class="date holiday">6</div>
+          <div class="date">7</div>
+          <div class="date">8</div>
+          <div class="date">9</div>
+          <div class="date">10</div>
+          <div class="date">11</div>
+          <div class="date holiday">12</div>
+          <div class="date holiday">13</div>
+          <div class="date">14</div>
+          <div class="date">15</div>
+          <div class="date">16</div>
+          <div class="date">17</div>
+          <div class="date">18</div>
+          <div class="date holiday">19</div>
+          <div class="date holiday">20</div>
+          <div class="date">21</div>
+          <div class="date">22</div>
+          <div class="date">23</div>
+          <div class="date">24</div>
+          <div class="date">25</div>
+          <div class="date holiday">26</div>
+          <div class="date holiday">27</div>
+          <div class="date">28</div>
+          <div class="date">29</div>
+          <div class="date">30</div>
+        </div>
+      </div>
+      <div class="month">
+        <h2>
+          <span class="month-number">4</span>April</h2>
+        <div class="month-grid">
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date">1</div>
+          <div class="date holiday">2</div>
+          <div class="date holiday">3</div>
+          <div class="date holiday">4</div>
+          <div class="date holiday">5</div>
+          <div class="date">6</div>
+          <div class="date">7</div>
+          <div class="date">8</div>
+          <div class="date">9</div>
+          <div class="date">10</div>
+          <div class="date">11</div>
+          <div class="date">12</div>
+          <div class="date">13</div>
+          <div class="date">14</div>
+          <div class="date">15</div>
+          <div class="date">16</div>
+          <div class="date">17</div>
+          <div class="date">18</div>
+          <div class="date">19</div>
+          <div class="date">20</div>
+          <div class="date">21</div>
+          <div class="date">22</div>
+          <div class="date">23</div>
+          <div class="date">24</div>
+          <div class="date">25</div>
+          <div class="date">26</div>
+          <div class="date">27</div>
+          <div class="date">28</div>
+          <div class="date">29</div>
+          <div class="date">30</div>
+        </div>
+      </div>
+      <div class="month">
+        <h2>
+          <span class="month-number">5</span>May</h2>
+        <div class="month-grid">
+          <div class="date holiday">1</div>
+          <div class="date holiday">2</div>
+          <div class="date">3</div>
+          <div class="date">4</div>
+          <div class="date">5</div>
+          <div class="date">6</div>
+          <div class="date holiday">7</div>
+          <div class="date holiday">8</div>
+          <div class="date">9</div>
+          <div class="date">10</div>
+          <div class="date">11</div>
+          <div class="date">12</div>
+          <div class="date">13</div>
+          <div class="date holiday">14</div>
+          <div class="date holiday">15</div>
+          <div class="date">16</div>
+          <div class="date">17</div>
+          <div class="date">18</div>
+          <div class="date">19</div>
+          <div class="date">20</div>
+          <div class="date holiday">21</div>
+          <div class="date holiday">22</div>
+          <div class="date">23</div>
+          <div class="date">24</div>
+          <div class="date">25</div>
+          <div class="date">26</div>
+          <div class="date">27</div>
+          <div class="date holiday">28</div>
+          <div class="date holiday">29</div>
+          <div class="date">30</div>
+          <div class="date">31</div>
+        </div>
+      </div>
+      <div class="month">
+        <h2>
+          <span class="month-number">6</span>June</h2>
+        <div class="month-grid">
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date">1</div>
+          <div class="date">2</div>
+          <div class="date holiday">3</div>
+          <div class="date holiday">4</div>
+          <div class="date holiday">5</div>
+          <div class="date">6</div>
+          <div class="date">7</div>
+          <div class="date">8</div>
+          <div class="date">9</div>
+          <div class="date">10</div>
+          <div class="date holiday">11</div>
+          <div class="date holiday">12</div>
+          <div class="date">13</div>
+          <div class="date">14</div>
+          <div class="date">15</div>
+          <div class="date">16</div>
+          <div class="date">17</div>
+          <div class="date holiday">18</div>
+          <div class="date holiday">19</div>
+          <div class="date">20</div>
+          <div class="date">21</div>
+          <div class="date">22</div>
+          <div class="date">23</div>
+          <div class="date">24</div>
+          <div class="date holiday">25</div>
+          <div class="date holiday">26</div>
+          <div class="date">27</div>
+          <div class="date">28</div>
+          <div class="date">29</div>
+          <div class="date">30</div>
+        </div>
+      </div>
+      <div class="month">
+        <h2>
+          <span class="month-number">7</span>July</h2>
+        <div class="month-grid">
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date">1</div>
+          <div class="date holiday">2</div>
+          <div class="date holiday">3</div>
+          <div class="date">4</div>
+          <div class="date">5</div>
+          <div class="date">6</div>
+          <div class="date">7</div>
+          <div class="date">8</div>
+          <div class="date holiday">9</div>
+          <div class="date holiday">10</div>
+          <div class="date">11</div>
+          <div class="date">12</div>
+          <div class="date">13</div>
+          <div class="date">14</div>
+          <div class="date">15</div>
+          <div class="date holiday">16</div>
+          <div class="date holiday">17</div>
+          <div class="date">18</div>
+          <div class="date">19</div>
+          <div class="date">20</div>
+          <div class="date">21</div>
+          <div class="date">22</div>
+          <div class="date holiday">23</div>
+          <div class="date holiday">24</div>
+          <div class="date">25</div>
+          <div class="date">26</div>
+          <div class="date">27</div>
+          <div class="date">28</div>
+          <div class="date">29</div>
+          <div class="date holiday">30</div>
+          <div class="date holiday">31</div>
+        </div>
+      </div>
+      <div class="month">
+        <h2>
+          <span class="month-number">8</span>August</h2>
+        <div class="month-grid">
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date">1</div>
+          <div class="date">2</div>
+          <div class="date">3</div>
+          <div class="date">4</div>
+          <div class="date holiday">5</div>
+          <div class="date holiday">6</div>
+          <div class="date">7</div>
+          <div class="date">8</div>
+          <div class="date">9</div>
+          <div class="date">10</div>
+          <div class="date">11</div>
+          <div class="date holiday">12</div>
+          <div class="date holiday">13</div>
+          <div class="date">14</div>
+          <div class="date">15</div>
+          <div class="date">16</div>
+          <div class="date">17</div>
+          <div class="date">18</div>
+          <div class="date holiday">19</div>
+          <div class="date holiday">20</div>
+          <div class="date">21</div>
+          <div class="date">22</div>
+          <div class="date">23</div>
+          <div class="date">24</div>
+          <div class="date">25</div>
+          <div class="date holiday">26</div>
+          <div class="date holiday">27</div>
+          <div class="date">28</div>
+          <div class="date">29</div>
+          <div class="date">30</div>
+          <div class="date">31</div>
+        </div>
+      </div>
+      <div class="month">
+        <h2>
+          <span class="month-number">9</span>September</h2>
+        <div class="month-grid">
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date">1</div>
+          <div class="date">2</div>
+          <div class="date holiday">3</div>
+          <div class="date holiday">4</div>
+          <div class="date">5</div>
+          <div class="date">6</div>
+          <div class="date">7</div>
+          <div class="date">8</div>
+          <div class="date holiday">9</div>
+          <div class="date holiday">10</div>
+          <div class="date holiday">11</div>
+          <div class="date">12</div>
+          <div class="date">13</div>
+          <div class="date">14</div>
+          <div class="date">15</div>
+          <div class="date">16</div>
+          <div class="date holiday">17</div>
+          <div class="date holiday">18</div>
+          <div class="date">19</div>
+          <div class="date">20</div>
+          <div class="date">21</div>
+          <div class="date">22</div>
+          <div class="date">23</div>
+          <div class="date holiday">24</div>
+          <div class="date holiday">25</div>
+          <div class="date">26</div>
+          <div class="date">27</div>
+          <div class="date">28</div>
+          <div class="date">29</div>
+          <div class="date">30</div>
+        </div>
+      </div>
+      <div class="month">
+        <h2>
+          <span class="month-number">10</span>October</h2>
+        <div class="month-grid">
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date holiday">1</div>
+          <div class="date holiday">2</div>
+          <div class="date">3</div>
+          <div class="date">4</div>
+          <div class="date">5</div>
+          <div class="date">6</div>
+          <div class="date">7</div>
+          <div class="date holiday">8</div>
+          <div class="date holiday">9</div>
+          <div class="date holiday">10</div>
+          <div class="date">11</div>
+          <div class="date">12</div>
+          <div class="date">13</div>
+          <div class="date">14</div>
+          <div class="date holiday">15</div>
+          <div class="date holiday">16</div>
+          <div class="date">17</div>
+          <div class="date">18</div>
+          <div class="date">19</div>
+          <div class="date">20</div>
+          <div class="date">21</div>
+          <div class="date holiday">22</div>
+          <div class="date holiday">23</div>
+          <div class="date">24</div>
+          <div class="date">25</div>
+          <div class="date">26</div>
+          <div class="date">27</div>
+          <div class="date">28</div>
+          <div class="date holiday">29</div>
+          <div class="date holiday">30</div>
+          <div class="date">31</div>
+        </div>
+      </div>
+      <div class="month">
+        <h2>
+          <span class="month-number">11</span>November</h2>
+        <div class="month-grid">
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date">1</div>
+          <div class="date">2</div>
+          <div class="date">3</div>
+          <div class="date">4</div>
+          <div class="date holiday">5</div>
+          <div class="date holiday">6</div>
+          <div class="date">7</div>
+          <div class="date">8</div>
+          <div class="date">9</div>
+          <div class="date">10</div>
+          <div class="date">11</div>
+          <div class="date holiday">12</div>
+          <div class="date holiday">13</div>
+          <div class="date">14</div>
+          <div class="date">15</div>
+          <div class="date">16</div>
+          <div class="date">17</div>
+          <div class="date">18</div>
+          <div class="date holiday">19</div>
+          <div class="date holiday">20</div>
+          <div class="date">21</div>
+          <div class="date">22</div>
+          <div class="date">23</div>
+          <div class="date">24</div>
+          <div class="date">25</div>
+          <div class="date holiday">26</div>
+          <div class="date holiday">27</div>
+          <div class="date">28</div>
+          <div class="date">29</div>
+          <div class="date">30</div>
+          <div class="date">31</div>
+        </div>
+      </div>
+      <div class="month">
+        <h2>
+          <span class="month-number">12</span>December</h2>
+        <div class="month-grid">
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date"></div>
+          <div class="date">1</div>
+          <div class="date">2</div>
+          <div class="date holiday">3</div>
+          <div class="date holiday">4</div>
+          <div class="date">5</div>
+          <div class="date">6</div>
+          <div class="date">7</div>
+          <div class="date">8</div>
+          <div class="date">9</div>
+          <div class="date holiday">10</div>
+          <div class="date holiday">11</div>
+          <div class="date">12</div>
+          <div class="date">13</div>
+          <div class="date">14</div>
+          <div class="date">15</div>
+          <div class="date">16</div>
+          <div class="date holiday">17</div>
+          <div class="date holiday">18</div>
+          <div class="date">19</div>
+          <div class="date">20</div>
+          <div class="date">21</div>
+          <div class="date">22</div>
+          <div class="date">23</div>
+          <div class="date holiday">24</div>
+          <div class="date holiday">25</div>
+          <div class="date">26</div>
+          <div class="date">27</div>
+          <div class="date">28</div>
+          <div class="date">29</div>
+          <div class="date">30</div>
+          <div class="date holiday">31</div>
+        </div>
       </div>
     </div>
-    <div class="month">02</div>
-    <div class="month">03</div>
-    <div class="month">04</div>
-    <div class="month">05</div>
-    <div class="month">06</div>
-    <div class="month">07</div>
-    <div class="month">08</div>
-    <div class="month">09</div>
-    <div class="month">10</div>
-    <div class="month">11</div>
-    <div class="month">12</div>
-  </div>
-</body>
+  </body>
 </html>

@@ -1,19 +1,36 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header, Footer } from './components';
-import { Home } from "./pages/home";
-import { Todo } from "./pages/todo";
-import './styles/global.scss';
+import { useEffect, useState } from 'react';
+import './App.scss';
 
-const App = () => {
+function App() {
+  const [count, setCount] = useState(0);
+
+  const increase = () => {
+    setCount(count + 1);
+  }
+
+  const decrease = () => {
+    setCount(count - 1);
+  }
+
+  const reset = () => {
+    setCount(0);
+  }
+
+  useEffect(() => {
+    document.title = `c_13 (${count})`;
+  }, [count]);
+
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/todo" element={<Todo />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <div className="App">
+      <div className="counter">
+        <div className="number">{count}</div>
+        <div className="actions">
+          <button onClick={increase}>increase</button>
+          <button onClick={decrease}>decrease</button>
+          <button onClick={reset}>reset</button>
+        </div>
+      </div>
+    </div>
   );
 }
 
