@@ -241,6 +241,7 @@ homework: register page
 
 ### [React_05](https://docs.google.com/presentation/d/103z6-n203-o8npzUR4EOAXDwgIDK9kO8xkmOQpsRwFE/edit#slide=id.p)
 
+- Regex
 - useContext
 - homework demo & implement
 
