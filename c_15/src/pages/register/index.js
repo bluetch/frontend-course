@@ -9,58 +9,61 @@ export const Register = () => {
   const passwordRef = useRef();
   const passwordAgainRef = useRef();
 
-  const nameRegex = /\w/g;
-  const emailRegex = /[a-z0-9]@[a-z]+\.[a-z]{2,3}/g;
-  const mobileRegex = /\d{10}/g;
-  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/g;
+  const nameRegex = /\w/;
+  const emailRegex = /[A-Za-z0-9]*@[a-z]+\.[a-z]{2,3}$/;
+  const mobileRegex = /^09[0-9]{8}$/;
+  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
-  const [nameError, setNameError] = useState(false);
-  const [emailError, setEmailError] = useState(false);
-  const [mobileError, setMobileError] = useState(false);
-  const [passwordError, setPasswordError] = useState(false);
-  const [passwordAgainError, setPasswordAgainError] = useState(false);
+  const [nameError, setNameError] = useState(null);
+  const [emailError, setEmailError] = useState(null);
+  const [mobileError, setMobileError] = useState(null);
+  const [passwordError, setPasswordError] = useState(null);
+  const [passwordAgainError, setPasswordAgainError] = useState(null);
 
   const handleRegister = (event) => {
     event.preventDefault();
+
     if(nameRegex.test(nameRef.current.value)){
       setNameError(false);
     }else{
       setNameError(true);
-      return true;
     }
 
     if(emailRegex.test(emailRef.current.value)){
       setEmailError(false);
     }else{
       setEmailError(true);
-      return true;
     }
 
     if(mobileRegex.test(mobileRef.current.value)){
       setMobileError(false);
     }else{
       setMobileError(true);
-      return true;
     }
 
     if(passwordRegex.test(passwordRef.current.value)){
       setPasswordError(false);
     }else{
       setPasswordError(true);
-      return true;
     }
 
-    if(passwordRef.current.value === passwordAgainRef.current.value){
+    if(passwordRef.current.value === passwordAgainRef.current.value && passwordAgainRef.current.value !==""){
       setPasswordAgainError(false);
     }else{
       setPasswordAgainError(true);
-      return;
     }
 
-    if(!nameError && !mobileError && !mobileError && !passwordError && !passwordAgainError){
+    if(nameError || emailError || mobileError || passwordError || passwordAgainError){
+      return false;
+    }
+    
+    if(nameError === false && emailError === false && mobileError === false && passwordError === false && passwordAgainError === false){
       // all false
+      console.log()
       window.location.href="/";
     }
+
+    
   }
 
   useEffect(() => {
