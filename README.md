@@ -99,7 +99,7 @@ homework: To build a calendar page with HTML & CSS
 homework: To create a simple animation and header in pages
 ```
 
-### [CSS-4](https://docs.google.com/presentation/d/1fw2JPKNHeg45vUPy0zTbH60L4HxrjXpeJSlKMD6LE_k/)
+### [CSS_04](https://docs.google.com/presentation/d/1fw2JPKNHeg45vUPy0zTbH60L4HxrjXpeJSlKMD6LE_k/)
 
 - opacity and display:none, visibility:hidden
 - float, clear
