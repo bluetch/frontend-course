@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { Button, Layout } from '../../components';
 import styles from './register.module.scss';
 
@@ -62,13 +62,8 @@ export const Register = () => {
       console.log()
       window.location.href="/";
     }
-
-    
   }
 
-  useEffect(() => {
-    // function
-  }, []);
 
   return (
     <Layout className={styles.register}>
