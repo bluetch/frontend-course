@@ -88,7 +88,7 @@ export const Todo = () => {
             {errorDate && (<span className={styles.error}>{errorDate}</span>)}
           </label>
 
-          <Button onClick={() => handleAdd()}>新增</Button>
+          <Button onClick={handleAdd}>新增</Button>
         </div>
         <div className={styles.todos}>
           {todos.map((item, index) => {
