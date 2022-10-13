@@ -221,8 +221,6 @@ homework: Todo list
 - (JS) querySelector
 - (JS) map(), forEach()
 
-
-
 ```
 homework: Todo list
 ```
@@ -233,7 +231,7 @@ homework: Todo list
 - (JS) RegExp.test()
 - (JS) event.preventDefault()
 - placeholder
-- homework implement & demo
+- homework demo & implement
 
 ```
 homework: register page
@@ -249,14 +247,14 @@ homework: register page
 homework: dark mode
 ```
 
-### [React_06]()
+### [React_06](https://docs.google.com/presentation/d/1EWFsM5W8K17rtuyApUN7fzC2ot3gHUsDC3eYM-qXymc/edit#slide=id.p)
 
-- useReducer
-- useCallback
+- React Libraries
+- React-chart-js-2
 - homework demo & implement
 
 ```
-homework:
+homework: line chart & doughnut chart
 ```
 
 ### [React.js_07]()
