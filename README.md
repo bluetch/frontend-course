@@ -250,27 +250,18 @@ homework: dark mode
 ### [React_06](https://docs.google.com/presentation/d/1EWFsM5W8K17rtuyApUN7fzC2ot3gHUsDC3eYM-qXymc/edit#slide=id.p)
 
 - React Libraries
+- Material UI
 - React-chart-js-2
 - homework demo & implement
 
 ```
-homework: line chart & doughnut chart
+homework: Implement 4 charts by import package
 ```
 
-### [React.js_07]()
 
-- React.memo
-- useMemo
-- homework demo & implement
-
-```
-homework:
-```
-
-## 7. [RESTfulAPI]()
+## [React.js_07]()
 
 - Intro RESTful API
-- Chrome Inspect: Network
 - https://mockapi.io/
 - Get Data
 - Post Data
@@ -282,7 +273,7 @@ homework:
 homework:
 ```
 
-## 8. LeetCode
+## 7. LeetCode
 
 ### [LeetCode_01]()
 

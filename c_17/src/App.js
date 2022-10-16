@@ -1,3 +1,5 @@
+import { AppBar, Button, Card, CardContent, CardActions, Container, Toolbar, Typography, Grid } from '@mui/material';
+import HomeIcon from '@mui/icons-material/Home';
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, PointElement, LineElement, ArcElement, Title, Tooltip, Legend, RadialLinearScale, Filler } from 'chart.js';
 import { Doughnut, Line, Bar, Radar } from 'react-chartjs-2';
 import './App.css';
@@ -19,11 +21,11 @@ function App() {
 
   // Radar Chart
   const dataRadar = {
-    labels: ['Thing 1', 'Thing 2', 'Thing 3', 'Thing 4', 'Thing 5', 'Thing 6'],
+    labels: ['五顆星', '四顆星', '三顆星', '二顆星', '一顆星', '尚未評論'],
     datasets: [
       {
-        label: '# of Votes',
-        data: [9, 4, 3, 5, 2, 3],
+        label: '數量',
+        data: [20, 18, 16, 0, 2, 10],
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
         borderColor: 'rgba(255, 99, 132, 1)',
         borderWidth: 1,
@@ -35,13 +37,13 @@ function App() {
     plugins: {
       title: {
         display: true,
-        text: 'Radar Chart',
+        text: '評價',
       },
     },
   };
   // Doughnut Chart
   const dataDoughnut = {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['女生衣著', '男生衣著', '運動健身', '男女鞋', '居家生活', '美食、伴手禮'],
     datasets: [
       {
         data: [12, 19, 3, 5, 2, 3],
@@ -65,12 +67,21 @@ function App() {
       },
     ],
   };
+  const optionsDoughnut = {
+    responsive: true,
+    plugins: {
+      title: {
+        display: true,
+        text: '商品分類',
+      },
+    },
+  };
   const dataLine = {
-    labels: ["2007", "2008", "2009", "2010", "2011", "2012", "2013"],
+    labels: ["三月", "四月", "五月", "六月", "七月", "八月", "九月"],
     datasets: [
       {
-        label: "Men",
-        data: [106898, 103937, 99492, 87213, 101943, 118848, 103120],
+        label: "蝦皮",
+        data: [1068, 1037, 992, 813, 1043, 1848, 1310],
         borderColor: 'blue',
         tension: 0,
         pointStyle: 'rect',
@@ -79,8 +90,8 @@ function App() {
         showLine: true,
       },
       {
-        label: "Female",
-        data: [97516, 94796, 91818, 79673, 94684, 110633, 95993],
+        label: "PCHome",
+        data: [716, 976, 918, 793, 964, 1033, 953],
         borderColor: 'black',
         tension: 0,
         pointStyle: 'rect',
@@ -90,66 +101,99 @@ function App() {
       }
     ]
   }
-  const dataBar = {
-    labels: ["January", "February", "March", "April", "May", "June"],
-    datasets: [
-      {
-        label: "Dataset 1",
-        data: [300, 400, 500, 600, 700, 800],
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      },
-      {
-        label: "Dataset 2",
-        data: [450, 500, 550, 600, 650, 700],
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
-      }
-    ],
-  };
-  
-  const optionsDoughnut = {
-    responsive: true,
-    plugins: {
-      title: {
-        display: true,
-        text: 'Doughnut Chart',
-      },
-    },
-  };
   const optionsLine = {
     responsive: true,
     plugins: {
       title: {
         display: true,
-        text: 'Line Chart',
+        text: '流量',
       },
     },
   };
+  const dataBar = {
+    labels: ["四月", "五月", "六月", "七月", "八月", "九月"],
+    datasets: [
+      {
+        label: "蝦皮",
+        data: [300, 400, 500, 600, 700, 800],
+        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+      },
+      {
+        label: "PCHome",
+        data: [250, 300, 350, 400, 450, 500],
+        backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      }
+    ],
+  };
+
+
+
   const optionsBar = {
     responsive: true,
     plugins: {
       title: {
         display: true,
-        text: 'Bar Chart',
+        text: '訂單量',
       },
     },
   };
   return (
     <div className="App">
-      <h1 className="title">My Dashboard</h1>
-      <div className="grid">
-        <div className="box">
-          <Radar options={optionsRadar} data={dataRadar} />
-        </div>
-        <div className="box">
-          <Doughnut options={optionsDoughnut} data={dataDoughnut} />
-        </div>
-        <div className="box">
-          <Line options={optionsLine} data={dataLine} />
-        </div>
-        <div className="box">
-          <Bar options={optionsBar} data={dataBar} />
-        </div>
-      </div>
+      <AppBar position="relative">
+        <Toolbar>
+          <HomeIcon sx={{ mr: 2 }} />
+          <Typography variant="h6" color="inherit" noWrap>
+            Ken's Dashboard
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <Container>
+        <Typography variant="h6" color="inherit" noWrap sx={{my: 2}}>
+          2022-09-01 至 2022-09-30
+        </Typography>
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={6} md={6}>
+            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <CardContent>
+                <Radar options={optionsRadar} data={dataRadar} />
+              </CardContent>
+              <CardActions>
+                <Button size="small">View</Button>
+              </CardActions>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={6} md={6}>
+            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <CardContent>
+                <Doughnut options={optionsDoughnut} data={dataDoughnut} />
+              </CardContent>
+              <CardActions>
+                <Button size="small">View</Button>
+              </CardActions>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={6} md={6}>
+            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <CardContent>
+                <Line options={optionsLine} data={dataLine} />
+              </CardContent>
+              <CardActions>
+                <Button size="small">View</Button>
+              </CardActions>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={6} md={6}>
+            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <CardContent>
+                <Bar options={optionsBar} data={dataBar} />
+              </CardContent>
+              <CardActions>
+                <Button size="small">View</Button>
+              </CardActions>
+            </Card>
+          </Grid>
+        </Grid>
+      </Container>
     </div>
   );
 }
