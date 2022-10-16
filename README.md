@@ -259,7 +259,7 @@ homework: Implement 4 charts by import package
 ```
 
 
-## [React.js_07]()
+### React.js_07
 
 - Intro RESTful API
 - https://mockapi.io/
@@ -275,7 +275,7 @@ homework:
 
 ## 7. LeetCode
 
-### [LeetCode_01]()
+### [LeetCode_01]
 
 - [Two Sum (Easy)](https://leetcode.com/problems/two-sum/)
 - [Palindrome Number (Easy)](https://leetcode.com/problems/palindrome-number/)
@@ -284,7 +284,7 @@ homework:
 homework: Submit Solution in your account
 ```
 
-### [LeetCode_02]()
+### [LeetCode_02]
 
 - [Longest Common Prefix (Easy)](https://leetcode.com/problems/longest-common-prefix/)
 - [Valid Parentheses (Easy)](https://leetcode.com/problems/valid-parentheses/)
@@ -294,7 +294,7 @@ homework: Submit Solution in your account
 homework: Submit Solution in your account
 ```
 
-### [LeetCode_03]()
+### [LeetCode_03]
 
 - [Add Two Numbers (Medium)](https://leetcode.com/problems/add-two-numbers/)
 - [Longest Substring Without Repeating Characters (Medium)](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
@@ -305,7 +305,7 @@ homework: Submit Solution in your account
 homework: Submit Solution in your account
 ```
 
-### [LeetCode_04]()
+### [LeetCode_04]
 
 - [Reverse Interger (Medium)](https://leetcode.com/problems/reverse-integer/)
 - [Container With Most Water (Medium)](https://leetcode.com/problems/container-with-most-water/)
@@ -316,7 +316,7 @@ homework: Submit Solution in your account
 ```
 
 
-# Extra
+# 8. Extra
 - (JS) destructuring assignment 解構賦值
 
 ## [Next.js]()
