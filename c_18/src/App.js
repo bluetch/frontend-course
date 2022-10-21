@@ -3,6 +3,7 @@ import './App.css';
 
 // https://pokeapi.co/
 // https://github.com/jahidulbinrafiq/HTTP_REQUEST_Methods
+// https://mockapi.io/
 const APIURL = "https://pokeapi.co/api/v2/pokemon/";
 
 function App() {
@@ -16,14 +17,14 @@ function App() {
         console.log(JSON.parse(this.responseText));
       }
     };
-    xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/", true);
+    xhttp.open("GET", APIURL, true);
     xhttp.send();
   }
 
   const fetchPokemon = () => {
     const promises = [];
     for (let i = 1; i <= 20; i++) {
-      const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
+      const url = `${APIURL}${i}`;
       promises.push(fetch(url).then((res) => res.json()));
     }
     Promise.all(promises).then((results) => {
@@ -57,7 +58,7 @@ function App() {
       })
     })
       .then(response => response.json())
-      .then(data => console.log(data))
+      .then(data => console.log(data));
   }
 
   const fetchPut = () => {

@@ -259,21 +259,19 @@ homework: Implement 4 charts by import package
 ```
 
 
-## 7. API
+### [React_07](https://docs.google.com/presentation/d/1fg5MS0vX345zgfs4EhIqnWHwDdFZqL56mCt58el8BTA/edit#slide=id.p)
 
-- Intro RESTful API
-- https://mockapi.io/
-- Get Data
-- Post Data
-- Put Data
-- Patch Data
-- Delete Data
+- What is API
+- XMLHttpRequest
+- Ajax
+- Axios
+- Fetch
 
 ```
-homework:
+homework: To use Fetch method to display Pokemon list
 ```
 
-## 8. LeetCode
+## 7. LeetCode
 
 ### LeetCode_01
 
@@ -316,7 +314,7 @@ homework: Submit Solution in your account
 ```
 
 
-# 9. Extra
+# 8. Extra
 - (JS) destructuring assignment 解構賦值
 
 ## Next.js
