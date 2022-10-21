@@ -259,7 +259,7 @@ homework: Implement 4 charts by import package
 ```
 
 
-### React_07
+## 7. API
 
 - Intro RESTful API
 - https://mockapi.io/
@@ -273,7 +273,7 @@ homework: Implement 4 charts by import package
 homework:
 ```
 
-## 7. LeetCode
+## 8. LeetCode
 
 ### LeetCode_01
 
@@ -316,10 +316,10 @@ homework: Submit Solution in your account
 ```
 
 
-# 8. Extra
+# 9. Extra
 - (JS) destructuring assignment 解構賦值
 
-## [Next.js]()
+## Next.js
 
 - Getting Started
 - Pages
@@ -333,7 +333,7 @@ homework: Submit Solution in your account
 homework:
 ```
 
-## [TailwindCSS]()
+## TailwindCSS
 
 - Get started
 - Core concept
