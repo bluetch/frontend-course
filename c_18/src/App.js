@@ -1,29 +1,42 @@
 import { useEffect, useState } from "react";
 import './App.css';
 
-// https://pokeapi.co/
-// https://github.com/jahidulbinrafiq/HTTP_REQUEST_Methods
-// https://mockapi.io/
 const APIURL = "https://pokeapi.co/api/v2/pokemon/";
 
 function App() {
   const [data, setData] = useState([]);
 
-  const fetchPokemon = () => {
-    const promises = [];
+  // const fetchPokemon = () => {
+  //   const promises = [];
+  //   for (let i = 1; i <= 21; i++) {
+  //     const url = `${APIURL}${i}`;
+  //     promises.push(fetch(url).then((res) => res.json()));
+  //   }
+  //   Promise.all(promises).then(results => {
+  //     const pokemons = results.map((result) => ({
+  //       name: result.name,
+  //       image: result.sprites['front_default'],
+  //       type: result.types.map((type) => type.type.name).join(', '),
+  //       id: result.id
+  //     }));
+  //     setData(pokemons);
+  //   });
+  // };
+
+  const fetchPokemon = async() => {
+    const data = [];
     for (let i = 1; i <= 21; i++) {
       const url = `${APIURL}${i}`;
-      promises.push(fetch(url).then((res) => res.json()));
+      data.push(await fetch(url).then((res) => res.json()));
     }
-    Promise.all(promises).then(results => {
-      const pokemons = results.map((result) => ({
-        name: result.name,
-        image: result.sprites['front_default'],
-        type: result.types.map((type) => type.type.name).join(', '),
-        id: result.id
-      }));
-      setData(pokemons);
-    });
+    const pokemons = data.map((item)=>{
+      return {
+        name: item.name,
+        image: item.sprites['front_default'],
+        id: item.id
+      }
+    })
+    setData(pokemons);
   };
 
   useEffect(() => {
