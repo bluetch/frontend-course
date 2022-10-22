@@ -11,18 +11,18 @@ function App() {
 
   const fetchPokemon = () => {
     const promises = [];
-    for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 21; i++) {
       const url = `${APIURL}${i}`;
       promises.push(fetch(url).then((res) => res.json()));
     }
-    Promise.all(promises).then((results) => {
-      const pokemon = results.map((result) => ({
+    Promise.all(promises).then(results => {
+      const pokemons = results.map((result) => ({
         name: result.name,
         image: result.sprites['front_default'],
         type: result.types.map((type) => type.type.name).join(', '),
         id: result.id
       }));
-      setData(pokemon);
+      setData(pokemons);
     });
   };
 
@@ -34,6 +34,7 @@ function App() {
     <div className="App">
       <div className="container">
         <h1>Pokemon API</h1>
+
         <div className="grid">
           {data.map((item) => {
             return (
