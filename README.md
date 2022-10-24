@@ -273,11 +273,9 @@ homework: To use Fetch method to display Pokemon list
 
 ### [React_08]()
 
-npx create-react-app my-app --template typescript
-npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 
 - TypeScript
-- async / await
+- Async
 
 ```
 homework: To use Fetch method to display Pokemon list
