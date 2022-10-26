@@ -285,9 +285,8 @@ homework: To use next.js & typescript build employee list API
 
 - Link
 - Image
-- Font
 - Dynamic Routes
-- SSG / SSR
+- CSG / SSG / SSR
 
 ```
 homework: 
