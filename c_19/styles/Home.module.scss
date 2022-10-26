@@ -1,0 +1,44 @@
+.actions {
+  margin: 20px 0;
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  label {
+    margin-right: 8px;
+  }
+}
+
+.table {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  margin: 20px 0;
+  border-spacing: 0;
+  overflow: hidden;
+  border-bottom: 3px solid rgb(5, 188, 124);
+  thead {
+    background-color: rgb(5, 188, 124);
+    color: white;
+    th {
+      text-align: left;
+      padding: 8px;
+    }
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: #dbdbdb;
+        cursor: pointer;
+      }
+      &:nth-child(even) {
+        background-color: #fafafa;
+      }
+      td {
+        border-bottom: 1px solid #dbdbdb;
+        padding: 8px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
