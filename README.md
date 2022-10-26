@@ -271,14 +271,26 @@ homework: Implement 4 charts by import package
 homework: To use Fetch method to display Pokemon list
 ```
 
-### [React_08]()
+### [Next_01](https://docs.google.com/presentation/d/1SHErF0j1857MJauRMg9DSCzjU6uiwZ18l_aihsIO6uo/edit#slide=id.p)
 
-
+- Next.js
 - TypeScript
-- Async
+- Async / await
 
 ```
-homework: To use Fetch method to display Pokemon list
+homework: To use next.js & typescript build employee list API
+```
+
+### [Next_02]()
+
+- Link
+- Image
+- Font
+- Dynamic Routes
+- SSG / SSR
+
+```
+homework: 
 ```
 
 ## 7. LeetCode
