@@ -49,7 +49,7 @@ export default function EmployeeList() {
     })
       .then(res => res.json())
       .then(data => {
-        console.log(JSON.parse(data.postData.contents));
+        // console.log(JSON.parse(data.postData.contents));
         let content = JSON.parse(data.postData.contents);
         setUsers([...users, { 
           id: users.length + 1 + "", 
