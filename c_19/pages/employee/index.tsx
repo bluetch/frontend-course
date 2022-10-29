@@ -4,8 +4,6 @@ import { useRouter } from 'next/router';
 import { useEffect, useState, useRef } from 'react';
 import styles from '/styles/employee.module.scss';
 
-// https://sheet.best/admin
-// const APIURL = "https://sheet.best/api/sheets/58e09de4-a8b4-4bce-bdf8-7384083359c9";
 const APIURL = "https://script.google.com/macros/s/AKfycby14-_yDoPPNNc_QX3swZBHoIkuxIX_PICZ8kUR_KuC4c-cfo1Hh3EqRBDhQKixwWqPPQ/exec";
 
 interface User {
@@ -28,7 +26,6 @@ export default function EmployeeList() {
     await fetch(APIURL)
       .then(res => res.json())
       .then(data => {
-        // console.log(data);
         setUsers(data);
         setIsLoading(false);
       })
@@ -49,15 +46,13 @@ export default function EmployeeList() {
     })
       .then(res => res.json())
       .then(data => {
-        // console.log(JSON.parse(data.postData.contents));
         let content = JSON.parse(data.postData.contents);
-        setUsers([...users, { 
-          id: users.length + 1 + "", 
-          name: content.name, 
-          team: content.team, 
-          role: content.role 
+        setUsers([...users, {
+          id: users.length + 1 + "",
+          name: content.name,
+          team: content.team,
+          role: content.role
         }])
-        // setUsers([...users, { id: data.length + 1, name: data.name, team: data.team, role: data.role }])
       })
       .catch(error => console.log("error:", error))
   }
@@ -112,9 +107,7 @@ export default function EmployeeList() {
             })}
           </tbody>
         </table>
-      )
-      }
-
+      )}
     </div >
   )
 }
