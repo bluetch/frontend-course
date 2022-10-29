@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useEffect, useState, useRef } from 'react';
-import styles from '/styles/Home.module.scss';
+import styles from '/styles/employee.module.scss';
 
 // https://sheet.best/admin
 // const APIURL = "https://sheet.best/api/sheets/58e09de4-a8b4-4bce-bdf8-7384083359c9";
@@ -18,16 +18,19 @@ interface User {
 export default function EmployeeList() {
   const router = useRouter();
   const [users, setUsers] = useState<User[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
   const nameRef = useRef<HTMLInputElement>(null);
   const teamRef = useRef<HTMLInputElement>(null);
   const roleRef = useRef<HTMLInputElement>(null);
 
   const fetchData = async () => {
+    setIsLoading(true);
     await fetch(APIURL)
       .then(res => res.json())
       .then(data => {
         console.log(data)
         setUsers(data);
+        setIsLoading(false);
       })
   }
 
@@ -49,7 +52,7 @@ export default function EmployeeList() {
       })
   }
 
-  const handleRowClick = (id: number) =>{
+  const handleRowClick = (id: String) => {
     router.push(`/employee/${id}`);
   }
 
@@ -74,29 +77,34 @@ export default function EmployeeList() {
         </label>
         <button onClick={postData}>Add</button>
       </div>
+      {isLoading ? (
+        <div className={styles.loading}>Loading...</div>
+      ) : (
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Team</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            {users.map((item, index) => {
+              return (
+                <tr key={index} onClick={() => handleRowClick(item.id)}>
+                  <td>{item.id}</td>
+                  <td>{item.name}</td>
+                  <td>{item.team}</td>
+                  <td>{item.role}</td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+      )
+      }
 
-      <table className={styles.table}>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Team</th>
-            <th>Role</th>
-          </tr>
-        </thead>
-        <tbody>
-          {users.map((item, index) => {
-            return (
-              <tr key={index} onClick={() => handleRowClick(item.id)}>
-                <td>{item.id}</td>
-                <td>{item.name}</td>
-                <td>{item.team}</td>
-                <td>{item.role}</td>
-              </tr>
-            )
-          })}
-        </tbody>
-      </table>
-    </div>
+    </div >
   )
 }
