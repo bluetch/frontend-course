@@ -6,7 +6,7 @@ import styles from '/styles/employee.module.scss';
 
 // https://sheet.best/admin
 // const APIURL = "https://sheet.best/api/sheets/58e09de4-a8b4-4bce-bdf8-7384083359c9";
-const APIURL = "https://script.googleusercontent.com/macros/echo?user_content_key=7ZS7FXQWgX7LOX6g9MU58yzAkaDN39goYJU25fWXdS06FRQVsOxGANEe9pMn13RXXc6EromCV9G2Amo4RJQJaTlvtjnNYN25m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnBadyLjKFIDAMHYMzkp81ZvaJ2enlHOchLIZFZ1mhKZWK-Sti9Am3dQt_GjGiZmgutAHGCss1tTFWCfBD0Kx19PJJ9acvMHHWw&lib=MnU9PmpBhMbjYB3SvXJVhKUGlE7FDeT50";
+const APIURL = "https://script.google.com/macros/s/AKfycby14-_yDoPPNNc_QX3swZBHoIkuxIX_PICZ8kUR_KuC4c-cfo1Hh3EqRBDhQKixwWqPPQ/exec";
 
 interface User {
   id: String,
@@ -28,7 +28,7 @@ export default function EmployeeList() {
     await fetch(APIURL)
       .then(res => res.json())
       .then(data => {
-        console.log(data)
+        // console.log(data);
         setUsers(data);
         setIsLoading(false);
       })
@@ -37,19 +37,29 @@ export default function EmployeeList() {
   const postData = () => {
     fetch(APIURL, {
       method: "POST",
+      // mode: "cors",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "text/plain; charset=utf-8",
       },
       body: JSON.stringify({
         name: nameRef.current?.value,
         team: teamRef.current?.value,
         role: roleRef.current?.value
-      })
+      }),
     })
       .then(res => res.json())
       .then(data => {
-        setUsers([...users, { id: data.length + 1, name: data.name, team: data.team, role: data.role }])
+        console.log(JSON.parse(data.postData.contents));
+        let content = JSON.parse(data.postData.contents);
+        setUsers([...users, { 
+          id: users.length + 1 + "", 
+          name: content.name, 
+          team: content.team, 
+          role: content.role 
+        }])
+        // setUsers([...users, { id: data.length + 1, name: data.name, team: data.team, role: data.role }])
       })
+      .catch(error => console.log("error:", error))
   }
 
   const handleRowClick = (id: String) => {
