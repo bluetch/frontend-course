@@ -1,8 +1,9 @@
+import Link from "next/link"
 export const Header = () => {
   return (
     <header>
       <div className="container">
-      Employee management system
+      <Link href="/">Employee management system</Link>
       </div>
     </header>
   )

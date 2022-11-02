@@ -7,6 +7,7 @@ export default function Home() {
     <div className="container">
       <div className={styles.card}>
         <Link href="/employee" className={styles.btn}>Employee List</Link>
+        <Link href="/posts" className={styles.btn}>Article</Link>
       </div>
     </div>
   )

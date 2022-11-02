@@ -283,13 +283,13 @@ homework: To use next.js & typescript build employee list API
 
 ### [Next_02]()
 
-- Link
-- Image
-- Dynamic Routes
+- next/link
+- next/head
+- Dynamic Route
 - CSG / SSG / SSR
 
 ```
-homework: 
+homework: employee detail page
 ```
 
 ## 7. LeetCode
