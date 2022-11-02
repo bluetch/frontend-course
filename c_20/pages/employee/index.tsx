@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState, useRef } from 'react';
@@ -25,6 +26,7 @@ export default function EmployeeList() {
     await fetch(`${APIURL}?0`)
       .then(res => res.json())
       .then(data => {
+        console.log(data);
         setUsers(data);
         setIsLoading(false);
       })
@@ -71,6 +73,10 @@ export default function EmployeeList() {
   }, [])
   return (
     <div className="container">
+      <Head>
+        <title>Employee List | EMS</title>
+        <meta property="og:title" content="My page title" key="title" />
+      </Head>
       <Link href="/" className={styles.btn}>Back</Link>
       <h1>Employee List</h1>
       <div className={styles.actions}>
@@ -105,7 +111,9 @@ export default function EmployeeList() {
               return (
                 <tr key={index} onClick={() => handleRowClick(item.id)}>
                   <td>{item.id}</td>
-                  <td>{item.name}</td>
+                  <td>
+                    <Link href={`/employee/${item.id}`}>{item.name}</Link>
+                  </td>
                   <td>{item.team}</td>
                   <td>{item.role}</td>
                 </tr>
@@ -117,3 +125,5 @@ export default function EmployeeList() {
     </div >
   )
 }
+
+
