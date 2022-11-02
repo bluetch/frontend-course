@@ -1,6 +1,10 @@
-import { useRouter } from 'next/router'
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { GetStaticPropsResult, GetStaticProps } from "next";
+import styles from '/styles/employee.module.scss';
 
 interface Post {
+  [x: string]: any;
   post: {
     id: string,
     title: string,
@@ -8,15 +12,17 @@ interface Post {
   }
 }
 
-const Post = ({ post }: Post) => {
-  const router = useRouter()
+interface HomeProps {
+  host: string,
+}
 
-  if (router.isFallback) {
-    return <div>Loading...</div>
-  }
+const Post = (post: Post) => {
+  const router = useRouter()
+  console.log(post)
 
   return (
     <div className="container">
+      <Link href="/posts" className={styles.btn}>Back</Link>
       <h2>
         {post.id} {post.title}
       </h2>
@@ -27,31 +33,10 @@ const Post = ({ post }: Post) => {
 
 export default Post;
 
-export const getStaticProps = async (context) => {
-  const { params } = context
-  const response = await fetch(
-    `https://jsonplaceholder.typicode.com/posts/${params.postId}`
-  )
-  const data = await response.json()
-
-  if (!data.id) {
-    return {
-      notFound: true
-    }
-  }
-
-  console.log(`Generating page for /posts/${params.postId}`)
-  return {
-    props: {
-      post: data
-    }
-  }
-}
-
 export const getStaticPaths = async () => {
   const response = await fetch('https://jsonplaceholder.typicode.com/posts')
   const data = await response.json()
-  const paths = data.map(post => {
+  const paths = data.map((post: Post) => {
     return {
       params: { postId: `${post.id}` }
     }
@@ -60,5 +45,19 @@ export const getStaticPaths = async () => {
   return {
     paths,
     fallback: true
+  }
+}
+
+export const getStaticProps: GetStaticProps = async (context): Promise<GetStaticPropsResult<HomeProps>> => {
+  const params = context.params;
+  const response = await fetch(
+    `https://jsonplaceholder.typicode.com/posts/${params?.postId}`
+  )
+  const data = await response.json()
+
+  return {
+    props: {
+      ...data,
+    }
   }
 }

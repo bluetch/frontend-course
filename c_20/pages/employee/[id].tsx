@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GetStaticProps } from "next";
+import { GetStaticPropsResult, GetStaticProps } from "next";
 import styles from '/styles/employee.module.scss';
 
 const APIURL = "https://script.google.com/macros/s/AKfycby14-_yDoPPNNc_QX3swZBHoIkuxIX_PICZ8kUR_KuC4c-cfo1Hh3EqRBDhQKixwWqPPQ/exec";
@@ -11,7 +11,11 @@ interface User {
   role: string,
 };
 
-export default function EmployeeDetail(data: User) {
+interface HomeProps {
+  host: string,
+}
+
+export default function EmployeeDetail(data: any) {
   const user = data[0];
   // console.log("user", user)
   return (
@@ -45,10 +49,9 @@ export const getStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async (context): Promise<GetStaticPropsResult<HomeProps>> => {
   const params  = context.params;
   const res = await fetch(`${APIURL}?${params?.id}`);
-  // const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
   const data = await res.json();
   return {
     props: {

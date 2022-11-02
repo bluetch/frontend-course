@@ -1,16 +1,19 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import styles from '/styles/employee.module.scss';
 
-interface Post {
-  post: {
+interface Posts {
+  posts: {
+    map: any
     id: string,
     title: string,
     body: string
   }
 }
 
-const PostList = ({ posts }: Post) => {
+const PostList = ({ posts }: Posts) => {
   return (
     <div className="container">
+      <Link href="/" className={styles.btn}>Back</Link>
       <h1>List of Posts</h1>
       {posts.map((post: any) => {
         return (
@@ -36,7 +39,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      posts: data.slice(0, 3)
+      posts: data
     }
   }
 }
