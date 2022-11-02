@@ -1,5 +1,4 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState, useRef } from 'react';
 import styles from '/styles/employee.module.scss';
@@ -11,7 +10,7 @@ interface User {
   name: String,
   team: String,
   role: String
-}
+};
 
 export default function EmployeeList() {
   const router = useRouter();
@@ -53,6 +52,12 @@ export default function EmployeeList() {
           team: content.team,
           role: content.role
         }])
+        // @ts-ignore: Object is possibly 'null'.
+        nameRef.current.value = null;
+        // @ts-ignore: Object is possibly 'null'.
+        teamRef.current.value = null;
+        // @ts-ignore: Object is possibly 'null'.
+        roleRef.current.value = null;
       })
       .catch(error => console.log("error:", error))
   }
@@ -66,6 +71,7 @@ export default function EmployeeList() {
   }, [])
   return (
     <div className="container">
+      <Link href="/" className={styles.btn}>Back</Link>
       <h1>Employee List</h1>
       <div className={styles.actions}>
         <label htmlFor="name">
@@ -80,7 +86,7 @@ export default function EmployeeList() {
           <span>role:</span>
           <input type="text" id="role" ref={roleRef} />
         </label>
-        <button onClick={postData}>Add</button>
+        <button onClick={postData} className={styles.btn}>Add</button>
       </div>
       {isLoading ? (
         <div className={styles.loading}>Loading...</div>

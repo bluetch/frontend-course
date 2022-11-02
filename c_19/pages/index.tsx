@@ -1,11 +1,13 @@
-import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState, useRef } from 'react';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/employee.module.scss';
 
 export default function Home() {
-  return(
-    <Link href="/employee">Employee</Link>
+  return (
+    <div className="container">
+      <div className={styles.card}>
+        <Link href="/employee" className={styles.btn}>Employee List</Link>
+      </div>
+    </div>
   )
 }
