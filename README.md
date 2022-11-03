@@ -276,6 +276,7 @@ homework: To use Fetch method to display Pokemon list
 - Next.js
 - TypeScript
 - Async / await
+- JSON parse & stringify
 
 ```
 homework: To use next.js & typescript build employee list API

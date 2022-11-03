@@ -76,11 +76,11 @@ export default function EmployeeList() {
   return (
     <div className="container">
       <Head>
-        <title>Employee List | EMS</title>
+        <title>員工名單</title>
         <meta property="og:title" content="My page title" key="title" />
       </Head>
       <div className={styles.card}>
-        <h1>Employee List</h1>
+        <h1>員工名單</h1>
         <div className={styles.actions}>
           <label htmlFor="name">
             <span>ID:</span>

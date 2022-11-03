@@ -67,9 +67,19 @@
   box-shadow: 0px 2px 2px rgba(0,0,0,0.25);
   h1{
     font-size: 20px;
-    border-bottom: 1px solid rgb(222, 222, 222);
+    border-bottom: 1px solid #dedede;
     margin: 0 -40px;
     padding: 0 40px 12px;
+  }
+  .profile{
+    display: flex;
+    padding: 12px 0;
+    .content{
+      width: 70%;
+    }
+    .photo{
+      width: 30%;
+    }
   }
 }
 
@@ -92,9 +102,15 @@
   }
   a{
     display: block;
-    margin: 8px 0;
+    margin: 12px 0;
     &:hover{
       text-decoration: underline;
     }
+    &.linkDisabled{
+      color: #a0a0a0;
+      text-decoration: none;
+      cursor: default;
+    }
   }
 }
+
