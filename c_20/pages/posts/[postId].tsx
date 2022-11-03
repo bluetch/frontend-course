@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { GetStaticPropsResult, GetStaticProps } from "next";
-import styles from '/styles/employee.module.scss';
+import styles from '/styles/main.module.scss';
 
 interface Post {
   [x: string]: any;
@@ -22,11 +22,13 @@ const Post = (post: Post) => {
 
   return (
     <div className="container">
-      <Link href="/posts" className={styles.btn}>Back</Link>
-      <h2>
-        {post.id} {post.title}
-      </h2>
-      <p>{post.body}</p>
+      <div className={styles.card}>
+        <h1>
+          {post.id} {post.title}
+        </h1>
+        {/* <Link href="/posts" className={styles.btn}>Back</Link> */}
+        <p>{post.body}</p>
+      </div>
     </div>
   )
 }

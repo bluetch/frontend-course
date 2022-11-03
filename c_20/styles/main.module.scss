@@ -20,9 +20,9 @@
   margin: 20px 0;
   border-spacing: 0;
   overflow: hidden;
-  border-bottom: 3px solid rgb(5, 188, 124);
+  border-bottom: 3px solid #DA291C;
   thead {
-    background-color: rgb(5, 188, 124);
+    background-color: #DA291C;
     color: white;
     th {
       text-align: left;
@@ -48,9 +48,29 @@
   }
 }
 
-.card{
-  padding: 12px;
+.cardMain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 12px 40px;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.8);
   box-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+}
+
+.card{
+  min-height: 80vh;
+  padding: 12px 40px;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+  h1{
+    font-size: 20px;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    margin: 0 -40px;
+    padding: 0 40px 12px;
+  }
 }
 
 .btn{
@@ -62,5 +82,19 @@
   &:hover{
     background-color: #e9e6e6;
     cursor: pointer;
+  }
+}
+
+.category{
+  width: 20%;
+  h2{
+    color: #DA291C;
+  }
+  a{
+    display: block;
+    margin: 8px 0;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }

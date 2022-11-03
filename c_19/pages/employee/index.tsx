@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState, useRef } from 'react';
-import styles from '/styles/employee.module.scss';
+import styles from '/styles/main.module.scss';
 
 const APIURL = "https://script.google.com/macros/s/AKfycby14-_yDoPPNNc_QX3swZBHoIkuxIX_PICZ8kUR_KuC4c-cfo1Hh3EqRBDhQKixwWqPPQ/exec";
 
@@ -16,6 +16,7 @@ export default function EmployeeList() {
   const router = useRouter();
   const [users, setUsers] = useState<User[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const idRef = useRef<HTMLInputElement>(null);
   const nameRef = useRef<HTMLInputElement>(null);
   const teamRef = useRef<HTMLInputElement>(null);
   const roleRef = useRef<HTMLInputElement>(null);
@@ -38,6 +39,7 @@ export default function EmployeeList() {
         "Content-Type": "text/plain; charset=utf-8",
       },
       body: JSON.stringify({
+        id: idRef.current?.value,
         name: nameRef.current?.value,
         team: teamRef.current?.value,
         role: roleRef.current?.value
@@ -52,6 +54,8 @@ export default function EmployeeList() {
           team: content.team,
           role: content.role
         }])
+        // @ts-ignore: Object is possibly 'null'.
+        idRef.current.value = null;
         // @ts-ignore: Object is possibly 'null'.
         nameRef.current.value = null;
         // @ts-ignore: Object is possibly 'null'.
@@ -74,6 +78,10 @@ export default function EmployeeList() {
       <Link href="/" className={styles.btn}>Back</Link>
       <h1>Employee List</h1>
       <div className={styles.actions}>
+        <label htmlFor="employeeID">
+          <span>id:</span>
+          <input type="text" id="employeeID" ref={idRef} />
+        </label>
         <label htmlFor="name">
           <span>name:</span>
           <input type="text" id="name" ref={nameRef} />

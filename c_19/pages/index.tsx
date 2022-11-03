@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useEffect, useState, useRef } from 'react';
-import styles from '../styles/employee.module.scss';
+import styles from '../styles/main.module.scss';
 
 export default function Home() {
   return (
