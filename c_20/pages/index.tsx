@@ -9,7 +9,7 @@ export default function Home() {
         <title>首頁</title>
       </Head>
       <div className={styles.cardMain}>
-      <div className={styles.category}>
+        <div className={styles.category}>
           <h2>客戶</h2>
           <Link href="/" className={styles.linkDisabled}>客戶名單</Link>
           <Link href="/" className={styles.linkDisabled}>新增客戶</Link>

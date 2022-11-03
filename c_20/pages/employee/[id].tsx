@@ -54,7 +54,6 @@ export default function EmployeeDetail(data: any) {
 export const getStaticPaths = async () => {
   const res = await fetch(APIURL);
   const data = await res.json();
-  // console.log("dataPath", data)
   const paths = data.map((item: User) => {
     return {
       params: {
