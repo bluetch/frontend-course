@@ -282,15 +282,16 @@ homework: To use Fetch method to display Pokemon list
 homework: To use next.js & typescript build employee list API
 ```
 
-### [Next_02]()
+### [Next_02](https://docs.google.com/presentation/d/1EtnrrZbcIUwagjnP7eeI-cL7gwV1qQOas10waPbdGHc/edit#slide=id.p)
 
 - next/link
 - next/head
+- next/image
 - Dynamic Route
 - CSG / SSG / SSR
 
 ```
-homework: employee detail page
+homework: employee detail page, home page, article list page, article detail page
 ```
 
 ## 7. LeetCode
