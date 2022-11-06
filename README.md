@@ -160,7 +160,7 @@ homework: To create 4 buttons and function to implement +, -, *, /
 - Functions with Variables
 
 ```
-homework:
+homework: To create a function to change car info by object type.
 ```
 
 ### [JavaScript_03](https://docs.google.com/presentation/d/1TQx1R0n_tqWncff52kVUC-GO911CqIRcF17UX6HCHyg/)
@@ -271,6 +271,8 @@ homework: Implement 4 charts by import package
 homework: To use Fetch method to display Pokemon list
 ```
 
+## 7. Next.js
+
 ### [Next_01](https://docs.google.com/presentation/d/1SHErF0j1857MJauRMg9DSCzjU6uiwZ18l_aihsIO6uo/edit#slide=id.p)
 
 - Next.js
@@ -294,7 +296,11 @@ homework: To use next.js & typescript build employee list API
 homework: employee detail page, home page, article list page, article detail page
 ```
 
-## 7. LeetCode
+## 8. Portfolio
+
+### [Personal_website]
+
+## 9. LeetCode
 
 ### LeetCode_01
 
