@@ -293,12 +293,25 @@ homework: To use next.js & typescript build employee list API
 - CSG / SSG / SSR
 
 ```
-homework: employee detail page, home page, article list page, article detail page
+homework_01: Employee detail page, home page, article list page, article detail page
+homework_02: To plan your personal website (Google Doc)
 ```
 
 ## 8. Portfolio
 
-### [Personal_website]
+### [Portfolio_01]
+
+- Information architecture
+- Content
+- Commit comment standard
+- Technical study
+
+```
+homework: To create personal website
+```
+
+### [Portfolio_02]
+### [Portfolio_03]
 
 ## 9. LeetCode
 
