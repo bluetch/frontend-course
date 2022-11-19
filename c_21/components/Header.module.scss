@@ -1,0 +1,19 @@
+.header{
+  .logo{
+    display: flex;
+    img{
+      width: 160px;
+    }
+  }
+  .flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  .link{
+    display: inline-block;
+    padding: 26px 16px;
+    &:hover{
+      background-color: rgba(0,0,0,0.1);
+    }
+  }
+}

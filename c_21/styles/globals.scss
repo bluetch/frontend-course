@@ -1,21 +1,13 @@
 // in globals.scss
 @import "_mixin.scss";
 
-body {
-  @include pad {
-    background-color: aqua;
-  }
-  @include mobile {
-    background: orange;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Montserrat:wght@300&family=Noto+Sans+TC:wght@300&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 a {
@@ -25,4 +17,23 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 32px;
+  @include pad{
+    max-width: initial;
+    width: 100%;
+    padding: 0 16px;
+  }
 }
