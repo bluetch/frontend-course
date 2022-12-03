@@ -358,21 +358,6 @@ homework: Submit Solution in your account
 
 
 # 8. Extra
-- (JS) destructuring assignment 解構賦值
-
-## Next.js
-
-- Getting Started
-- Pages
-- Data Fetching
-- (JS) JSON
-- Dynamic Routes
-- API Routes
-- Testing / Jest
-
-```
-homework:
-```
 
 ## TailwindCSS
 
