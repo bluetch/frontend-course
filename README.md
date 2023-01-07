@@ -114,6 +114,16 @@ homework: To create a simple animation and header in pages
 homework: To build a porfolio page with header in pages
 ```
 
+### [CSS_05](https://docs.google.com/presentation/d/1fw2JPKNHeg45vUPy0zTbH60L4HxrjXpeJSlKMD6LE_k/)
+
+- Viewport
+- Grid view
+- Media query
+
+```
+homework: To build RWD site for a home page
+```
+
 ## 4. Git
 
 ### [Git](https://docs.google.com/presentation/d/1XD6v_3u2pxLbwltzSp4HO-nMU994mHYSB59U-p-FKhE/edit#slide=id.p)

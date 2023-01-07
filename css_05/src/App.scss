@@ -1,0 +1,118 @@
+.container {
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    // mobile
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    // ipad
+    width: 768px;
+  }
+  @media screen and (min-width: 1024px) {
+    // desktop
+    width: 1024px;
+  }
+}
+
+.header {
+  padding: 20px;
+  h1 {
+    margin: 0;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    a {
+      padding: 12px;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: red;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      // mobile
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 30%;
+      flex-direction: column;
+      background: white;
+      padding-top: 80px;
+      &.open{
+        display: flex;
+      }
+    }
+  }
+  .toggle-menu {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+    img {
+      width: 32px;
+    }
+    @media screen and (max-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.hero {
+  img {
+    width: 100%;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  padding: 40px 0;
+}
+
+.sales {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  @media screen and (max-width: 767px) {
+    // mobile
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 768px) {
+    // ipad
+    grid-template-columns: repeat(2, 1fr);
+  }
+  a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+    h3 {
+      margin: 0;
+    }
+    h6 {
+      margin: 0;
+      font-size: 20px;
+      color: red;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
