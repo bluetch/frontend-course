@@ -19,7 +19,7 @@ from 0 to 1 to learning front-end skills as a beginner
 homework: setup your workstation
 ```
 
-## 2. HTML
+## 1. HTML
 
 ### [HTML_01](https://docs.google.com/presentation/d/1-WlJnKmr6ynL4WUZJil6obJh9oprSjmBjbcLUy2cono/)
 
@@ -52,7 +52,7 @@ homework: To build a menu page by HTML
 homework: To build a reservation page for restaurant by HTML
 ```
 
-## 3. CSS
+## 2. CSS
 
 ### [CSS_01](https://docs.google.com/presentation/d/1zb_wziZ2ZXC-q9s3v7kgqondwDCTugp4DO6cWqnPwT4/)
 
@@ -124,7 +124,7 @@ homework: To build a porfolio page with header in pages
 homework: To build RWD site for a home page
 ```
 
-## 4. Git
+## 3. Git
 
 ### [Git](https://docs.google.com/presentation/d/1XD6v_3u2pxLbwltzSp4HO-nMU994mHYSB59U-p-FKhE/edit#slide=id.p)
 
@@ -141,9 +141,9 @@ homework: To build RWD site for a home page
 homework: upload first project on Github
 ```
 
-## 5. JavaScript
+## 4. JavaScript
 
-### [JavaScript_01](https://docs.google.com/presentation/d/16Kif4pmDJg9BrD4aEPnxww1OaHzplwYnF7drP1_0Q2c/)
+### [JS_01](https://docs.google.com/presentation/d/16Kif4pmDJg9BrD4aEPnxww1OaHzplwYnF7drP1_0Q2c/)
 
 - Introduction
 - Syntax
@@ -157,7 +157,7 @@ homework: upload first project on Github
 homework: To create 4 buttons and function to implement +, -, *, /
 ```
 
-### [JavaScript_02](https://docs.google.com/presentation/d/1UxVlghL8E9qkrkunE19MUd39YbklNbtmUcJhgFJM4JU/)
+### [JS_02](https://docs.google.com/presentation/d/1UxVlghL8E9qkrkunE19MUd39YbklNbtmUcJhgFJM4JU/)
 
 - console.log
 - Data Types
@@ -173,7 +173,7 @@ homework: To create 4 buttons and function to implement +, -, *, /
 homework: To create a function to change car info by object type.
 ```
 
-### [JavaScript_03](https://docs.google.com/presentation/d/1TQx1R0n_tqWncff52kVUC-GO911CqIRcF17UX6HCHyg/)
+### [JS_03](https://docs.google.com/presentation/d/1TQx1R0n_tqWncff52kVUC-GO911CqIRcF17UX6HCHyg/)
 
 - Numbers & Number Methods
 - Strings & String methods
@@ -185,7 +185,7 @@ homework: To create a function to change car info by object type.
 homework: to use switch to make star sign or alcohol menu
 ```
 
-### [JavaScript_04](https://docs.google.com/presentation/d/1B_m6HSeBffvq8_JZ-mQf0EFn4cTR8tT8o0_aDQHxBZs/)
+### [JS_04](https://docs.google.com/presentation/d/1B_m6HSeBffvq8_JZ-mQf0EFn4cTR8tT8o0_aDQHxBZs/)
 
 - CLI
 - Events
@@ -197,7 +197,7 @@ homework: to use switch to make star sign or alcohol menu
 homework: Ninety-nine multiplication table
 ```
 
-## 6. React.js
+## 5. React.js
 
 ### [React_01](https://docs.google.com/presentation/d/17QwU1McgvM90c6PI7RDpOQt2YoyHYf5Hxdmy_L1jkG4/)
 
@@ -281,7 +281,7 @@ homework: Implement 4 charts by import package
 homework: To use Fetch method to display Pokemon list
 ```
 
-## 7. Next.js
+## 6. Next.js
 
 ### [Next_01](https://docs.google.com/presentation/d/1SHErF0j1857MJauRMg9DSCzjU6uiwZ18l_aihsIO6uo/edit#slide=id.p)
 
@@ -307,7 +307,7 @@ homework_01: Employee detail page, home page, article list page, article detail 
 homework_02: To plan your personal website (Google Doc)
 ```
 
-## 8. Portfolio
+## 7. Portfolio
 
 ### [Portfolio_01]
 
@@ -324,7 +324,7 @@ homework: To create personal website
 - test
 ### [Portfolio_03]
 
-## 9. LeetCode
+## 8. LeetCode
 
 ### LeetCode_01
 
