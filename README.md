@@ -114,7 +114,7 @@ homework: To create a simple animation and header in pages
 homework: To build a porfolio page with header in pages
 ```
 
-### [CSS_05](https://docs.google.com/presentation/d/1fw2JPKNHeg45vUPy0zTbH60L4HxrjXpeJSlKMD6LE_k/)
+### [CSS_05](https://docs.google.com/presentation/d/17LzATsS-wjxpbdIbm6TWRXRlD75c7h2P8xu-hIuJ1e8)
 
 - viewport
 - chrome device toolbar
