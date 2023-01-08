@@ -17,7 +17,11 @@ export const Header = () => {
           <a href="">Contact</a>
         </nav>
         <button className="toggle-menu" onClick={toggleMenu}>
-          <img src="images/icon_menu.svg" alt="" />
+          {open ? (
+            <img src="images/icon_close.svg" alt="" />
+          ) : (
+            <img src="images/icon_menu.svg" alt="" />
+          )}
         </button>
       </div>
     </header>
