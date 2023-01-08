@@ -116,12 +116,14 @@ homework: To build a porfolio page with header in pages
 
 ### [CSS_05](https://docs.google.com/presentation/d/1fw2JPKNHeg45vUPy0zTbH60L4HxrjXpeJSlKMD6LE_k/)
 
-- Viewport
-- Grid view
-- Media query
+- viewport
+- chrome device toolbar
+- media query
+- container
+- homework
 
 ```
-homework: To build RWD site for a home page
+homework: To build RWD site for a shop page
 ```
 
 ## 3. Git
