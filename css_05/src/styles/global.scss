@@ -4,15 +4,15 @@ body{
 
 .container {
   margin: 0 auto;
-  @media screen and (max-width: 767px) {
+  @media (max-width: 767px) {
     // mobile
     width: 100%;
   }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     // ipad
     width: 720px;
   }
-  @media screen and (min-width: 1200px) {
+  @media (min-width: 1200px) {
     // desktop
     width: 1140px;
   }

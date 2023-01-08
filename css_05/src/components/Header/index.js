@@ -5,6 +5,9 @@ export const Header = () => {
   const toggleMenu = () => {
     setOpen(!open);
   };
+  window.addEventListener('resize', function () {
+    console.log("width", window.innerWidth);
+  })
   return (
     <header className="header">
       <div className="container">
