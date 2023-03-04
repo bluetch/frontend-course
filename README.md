@@ -320,20 +320,36 @@ homework_02: To plan your personal website (Google Doc)
 
 ## 7. Portfolio
 
-### [Portfolio_01]
+### [Portfolio_01](https://docs.google.com/presentation/d/13Y8XppLUC1dv4OFHFpdApVbp37Wq_KQ9-oW6muLqd6A/edit#slide=id.p)
 
 - Information architecture
-- Content
-- Commit comment standard
-- Technical study
+- Cast study
+- Technical solution
+- Plan your resume
 
+```
+homework: To create plan document
+```
+
+
+### [Portfolio_02](https://docs.google.com/presentation/d/13Y8XppLUC1dv4OFHFpdApVbp37Wq_KQ9-oW6muLqd6A/edit#slide=id.p)
+
+- Plan your website structure
+- Build your portfolio
+- Apply your own domain
 ```
 homework: To create personal website
 ```
 
-### [Portfolio_02]
-- CSS_05 make RWD
-### [Portfolio_03]
+### [Portfolio_03](https://docs.google.com/presentation/d/13Y8XppLUC1dv4OFHFpdApVbp37Wq_KQ9-oW6muLqd6A/edit#slide=id.p)
+
+- Setup domain name (godaddy)
+- Vercel deploy tool
+- deploy your website with github 
+
+```
+homework: deploy your website
+```
 
 ## 8. LeetCode
 
