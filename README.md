@@ -128,19 +128,28 @@ homework: To build RWD site for a shop page
 
 ## 3. Git
 
-### [Git](https://docs.google.com/presentation/d/1XD6v_3u2pxLbwltzSp4HO-nMU994mHYSB59U-p-FKhE/edit#slide=id.p)
+### [Git_01](https://docs.google.com/presentation/d/1XD6v_3u2pxLbwltzSp4HO-nMU994mHYSB59U-p-FKhE/edit#slide=id.p)
 
 - Introduction
 - Installation
 - setup ssh key
 - basic: clone, pull, add, status, commit, push
 - Github introduction
-- branch, merge
-- git reset
 - gitignore
 
 ```
 homework: upload first project on Github
+```
+
+### [Git_02](https://docs.google.com/presentation/d/1XD6v_3u2pxLbwltzSp4HO-nMU994mHYSB59U-p-FKhE/edit#slide=id.p)
+
+- Branch
+- Stash
+- Merge
+- reset
+
+```
+homework: create a new branch for feature
 ```
 
 ## 4. JavaScript
@@ -323,7 +332,7 @@ homework: To create personal website
 ```
 
 ### [Portfolio_02]
-- test
+- CSS_05 make RWD
 ### [Portfolio_03]
 
 ## 8. LeetCode
