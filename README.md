@@ -351,6 +351,10 @@ homework: To create personal website
 homework: deploy your website
 ```
 
+### [Portfolio_04](https://docs.google.com/presentation/d/13Y8XppLUC1dv4OFHFpdApVbp37Wq_KQ9-oW6muLqd6A/edit#slide=id.p)
+
+- build a react calculator for task
+
 ## 8. LeetCode
 
 ### LeetCode_01
